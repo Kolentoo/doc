@@ -1,0 +1,17 @@
+{
+  "name": "kolento",
+  "version": "1.0.0",
+  "main": "index.js",
+  "title": "Kolento",
+  "description": "Just playing around",
+  "scripts": {
+    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress dev docs",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kolento",
+  "license": "ISC",
+  "devDependencies": {
+    "vuepress": "^1.9.9"
+  }
+}
