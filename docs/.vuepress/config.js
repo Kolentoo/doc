@@ -34,15 +34,15 @@ module.exports = {
       ]},
       { text: '生活记录', 
         items: [
-          { text: '生活点滴',  link: '/aboutme/' },
-          { text: '旅行记录',  link: '/aboutme/' },
-          { text: '大事件', link: '/projects/' },
+          { text: '生活点滴',  link: '/life/' },
+          { text: '旅行记录',  link: '/travel/' },
+          { text: '大事件', link: '/important/' },
       ]},
       { text: '动漫游戏', 
         items: [
         { text: '我的B站',  link: 'https://space.bilibili.com/601185?spm_id_from=333.788.0.0' },
         { text: '动漫解说', link: '/comments/' },
-        { text: '游戏记录', link: '/comments/' },
+        { text: '游戏记录', link: '/games/' },
         { text: '直播间', link: 'https://live.bilibili.com/748068?broadcast_type=0&is_room_feed=1&spm_id_from=333.999.live_users_card.0.click&live_from=86001' },
       ]},
       { text: '24小时直播间', link: 'https://live.bilibili.com/748068?broadcast_type=0&is_room_feed=1&spm_id_from=333.999.live_users_card.0.click&live_from=86001' },
@@ -74,7 +74,19 @@ module.exports = {
         'summer', /* /bar/summer.html */
         'reset'   /* /bar/reset.html */
       ],
+      '/games/': [
+        '',      /* /bar/ */
+      ],
       '/kplayer/': [
+        '',      /* /bar/ */
+      ],
+      '/life/': [
+        '',      /* /bar/ */
+      ],
+      '/travel/': [
+        '',      /* /bar/ */
+      ],
+      '/important/': [
         '',      /* /bar/ */
       ],
       
