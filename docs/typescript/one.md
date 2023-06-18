@@ -20,14 +20,14 @@ hello(123)
 //Argument of type 'number' is not assignable to parameter of type 'string'.
 ```
 ## 基础数据类型
-#### 布尔类型 boolean
+### 布尔类型 boolean
 ```
 let flag:boolean=true;
 flag=false;
 flag=123 //类型报错
 ```
 
-#### 数值类型 number
+### 数值类型 number
 ```
 let a:number=10; //十进制
 let b:number=0b1010 //二进制
@@ -36,14 +36,14 @@ let d:number = 0xa //十六进制
 a=11;
 ```
 
-#### 字符串类型
+### 字符串类型
 ```
 let str:string='123';
 str = '456';
 str = 456 //类型报错
 ```
 
-#### undefined和null
+### undefined和null
 这两个平时用的不多，了解即可。
 这两个类型除了赋值`undefined`和`null`以外，还可以作为其他类型的子类型(严格模式下会报错)
 ```
@@ -56,7 +56,7 @@ let c:string=null; //严格模式才会报错
 ```
 
 ## 引用数据类型
-#### 数组
+### 数组
 ```
 // 定义数据1
 let arr1:[]=[];
@@ -67,7 +67,8 @@ arr2=['1']; //类型报错 数组中只能赋值数值类型
 let arr3:Array<number>=[1,2,3];
 ```
 
-#### 对象 表示非原始类型（除了number、string、boolean之外的类型）
+### 对象 
+表示非原始类型（除了number、string、boolean之外的类型）
 ```
 let obj:object={}
 obj=123 //报错 只能表示非原始类型
@@ -79,7 +80,7 @@ obj=[];
 obj=new String();
 ```
 
-#### any和void两种类型
+### any和void两种类型
 `any`:表示任何类型<br />
 当无法确定后台返回的值类型或者多种类型的情况下可以使用any类型，随意赋值都不会报错。
 ```
@@ -184,7 +185,7 @@ let kolento:Person={
 }
 ```
 
-#### 可选属性
+### 可选属性
 在接口中的属性名后添加`?`，表示这个属性可有可无
 ```
 // 定义一个接口
@@ -201,7 +202,7 @@ let kolento:Person={
 }
 ```
 
-#### 任意属性
+### 任意属性
 在接口中设置 任意属性 后，可以在变量中添加对应类型的属性。<br />
 **属性名：[propName:string]**
 ```
@@ -241,7 +242,7 @@ interface Person{
 ```
 这里由于任意属性的类型为`string`，而`age`是`number`类型，并不是 任意属性string类型的子集，因此报错。
 
-#### 只读属性
+### 只读属性
 只读属性意味着，属性只能被读取，不能被修改。在属性名前添加关键字`readonly`即可。
 ```
 interface Person{
@@ -256,7 +257,7 @@ interface Person{
 kolento.id=123
 ```
 
-#### 接口-数组类型
+### 接口-数组类型
 使用任意属性的形式可以定义数组结构的接口，但是平时用到的场景不多。
 ```
 // 由于数组的属性名默认为数字下标，所以设置类型为number
@@ -267,7 +268,7 @@ interface arr{
 let test:arr=[1,2,3,"5"]; // 报错 let test:arr=[1,2,3,"5"];
 ```
 
-#### 接口-函数类型
+### 接口-函数类型
 函数类型的接口主要配置参数的类型和函数返回值的类型。
 ```
 // 定义一个函数类型的接口
@@ -312,7 +313,7 @@ let add3:(a:number,b:number)=>number=function(a:number,b:number):number{
 }
 ```
 
-#### 可选参数和默认参数
+### 可选参数和默认参数
 * **可选参数** <br/>
 1.通过在参数后面添加`?`的形式，将该参数设置为可选参数，方法和接口中的可选属性一样。<br />
 2.**注意不能在可选属性后面添加参数**，即必选参数不能位于候选参数后
@@ -345,7 +346,7 @@ let getName = function(x:string="kolento",y?:string,z:string="hello"):string{
 console.log(getName()); //返回 kolentoundefinedhello
 ```
 
-#### 剩余函数和函数重载
+### 剩余函数和函数重载
 * **剩余函数**<br />
 在ES6中，可以使用```...rest```的方式获取函数中的剩余参数
 ```
