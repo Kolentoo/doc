@@ -380,4 +380,71 @@ console.log(add(11,22)) //返回 33
 console.log(add('前端','测试')) // 返回 前端测试
 ```
 
+## 类型断言
+#### 可以在语句中手动指定一个类型。<br />
+1.使用`as` 变量 as 类型。<br />
+2.使用 <类型>变量 的形式
+```
+// 定义一个获取数字或字符串长度的方法
+function getLength(x:string|number):number{
+    // 由于字符串拥有length属性
+    // 可以通过判断是否有该属性来判断x的类型是字符串
+    if(x.length){
+        return x.length
+    }else{
+        // 数字类型没有length属性，需要转化为字符串
+        return x.toString().length
+    }
+}
+// 代码报错
+// 类型“string | number”上不存在属性“length”。
+// 因为联合类型上使用的属性和方法必须是共有的。
+
+// 使用 as 进行类型断言指定字符串类型
+function getLength(x:string|number):number{
+    if((x as string).length){
+        return (x as string).length
+    }else{
+        return x.toString().length
+    }
+}
+
+// 使用 <类型>变量 的形式 指定字符串类型
+function getLength(x:string|number):number{
+    if((<string>x).length){
+        return (<string>x).length
+    }else{
+        return x.toString().length
+    }
+}
+```
+#### 类型断言的另一个作用
+将任何一个类型断言为any，any类型可以访问任何属性和方法
+```
+//报错 类型“Window & typeof globalThis”上不存在属性“a”
+window.a=10;
+//如果想在某个对象上增加一个属性，可以断言为any后添加
+(window as any).a=11;
+
+// 案例
+let a = {x:1,y:2};
+// 报错 类型“{ x: number; y: number; }”上不存在属性“z”。
+a.z=10;
+(a as any).z=11
+```
+**注意**<br/>
+类型断言有可能会掩盖类型错误，如果不是非常确定，就不要使用。
+
+#### 使用类型断言 将any断言为一个具体类型
+当出现以下的代码时，很容易出错<br/>
+当参数为数字和字符串之外的类型时，会报错。<br/>
+因此我们可以将any断言为一个具体类型。<br/>
+```
+function add(x:any,y:any):any{
+    return x+y
+}
+console.log(add(1,2) as number); // 3
+console.log(add('1','2')as string) // 12
+```
+
 
