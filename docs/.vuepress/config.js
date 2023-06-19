@@ -25,6 +25,8 @@ module.exports = {
               { text: '微信小程序', link: '/VuePress/' },
               { text: 'JavaScript', link: '/VuePress/' },
               { text: 'ES6', link: '/VuePress/' },
+              { text: 'VuePress', link: '/VuePress/' },
+              { text: 'MarkDown', link: '/MarkDown/' },
               { text: 'Kplayer', link: '/kplayer/' }
           ]},
       { text: '个人简历', 
@@ -75,6 +77,12 @@ module.exports = {
         'reset'   /* /bar/reset.html */
       ],
       '/games/': [
+        '',      /* /bar/ */
+      ],
+      '/VuePress/': [
+        '',      /* /bar/ */
+      ],
+      '/MarkDown/': [
         '',      /* /bar/ */
       ],
       '/kplayer/': [
