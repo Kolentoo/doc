@@ -58,7 +58,7 @@ DNF游戏留念<br />
 ## 单机
 ### steam游戏合集
 我的steam游戏列表
-<img src="/game/pcgame/steam1.jpg" width="100%" />
+<img src="/game/pcgame/steam1.png" width="100%" />
 <img src="/game/pcgame/steam2.png" width="100%" />
 
 ### epic游戏合集
