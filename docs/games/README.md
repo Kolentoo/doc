@@ -35,7 +35,6 @@ DNF游戏留念<br />
 当初超级火的游戏，<br />
 吃鸡也玩了不少时间，但是发现FPS游戏真的没啥天分。<br/>
 另外就是外挂实在太多了。
-
 <img src="/game/pubg/chijishijian.png" width="100%" />
 <img src="/game/pubg/chiji0.jpg" width="100%" />
 <img src="/game/pubg/chiji1.jpg" width="100%" />
@@ -54,6 +53,17 @@ DNF游戏留念<br />
 <img src="/game/pubg/chiji14.jpg" width="100%" />
 <img src="/game/pubg/chiji15.jpg" width="100%" />
 <img src="/game/pubg/chiji16.jpg" width="100%" />
+
+### FIFA23
+这是一款不错的解谜游戏。游玩时间400+小时。EA真的黑。<br />
+
+<img src="/game/fifa23/fifa23.jpg" width="100%" />
+<img src="/game/fifa23/card1.jpg" width="100%" />
+<img src="/game/fifa23/card2.jpg" width="100%" />
+<img src="/game/fifa23/card3.jpg" width="100%" />
+<img src="/game/fifa23/card4.jpg" width="100%" />
+<img src="/game/fifa23/team1.jpg" width="100%" />
+<img src="/game/fifa23/team2.jpg" width="100%" />
 
 ## 单机
 ### steam游戏合集

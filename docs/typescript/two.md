@@ -1,4 +1,4 @@
-# TypeScript进阶
+# 进阶
 ## 类型别名
 作用：类型别名可以用来给类型取一个新的名字。<br/>
 常用于联合类型。
@@ -277,6 +277,339 @@ console.log(n.fullName) //张-伟
 // 这里会去调用类中 设置器 的set fullName方法
 n.fullName='测试'; // 测试
 ```
+
+### 静态方法/属性
+通过关键字`static`将属性和方法设置成静态的属性/方法。<br />
+```
+class Test{
+    static sex:string
+    static hello(){
+        console.log('hello');
+    }
+}
+let a = new Test();
+
+// 静态成员无法被访问
+a.sex; // 属性“sex”在类型“Test”上不存在。
+a.hello(); //属性“sex”在类型“Test”上不存在。
+
+// 只能通过类自己进行访问
+Test.sex;
+Test.hello();
+```
+
+### 修饰符
+`public` `private` 和 `protected`
+* **public 修饰符表示属性或者方法是公有的**
+* 可以在任何地方被访问到，默认所有属性和方法都是public
+```
+// 以下两种是一样的
+class Kolento{
+    name:string
+    constructor(name:string){
+        this.name=name
+    }
+    hello(){
+        console.log('hello');
+    }
+}
+
+class Amiee{
+    public name:string
+    public constructor(name:string){
+        this.name=name
+    }
+    public hello(){
+        console.log('hello');
+    }
+}
+```
+
+* **private只能在类的内部被访问**<br />
+当把类中的name属性改成private类型后，通过k访问name就会报错。
+```
+class Kolento{
+    private name:string
+    constructor(name:string){
+        // 类自己本身是可以访问到的
+        this.name=name
+    }
+    hello(){
+        console.log('hello');
+    }
+}
+const k = new Kolento('kkk');
+// 报错 属性“name”为私有属性，只能在类“Kolento”中访问
+k.name;
+```
+* 当通过子类去继承父类时，父类的私有属性可以被继承，但是不能被读取。<br />
+```
+class Kolento{
+    private name:string
+    constructor(name:string){
+        this.name=name
+    }
+    hello(){
+        console.log('hello');
+    }
+}
+const k = new Kolento('kkk');
+
+class C extends Kolento{
+    constructor(name:string){
+        super(name);
+    }
+}
+const Cindy = new C('happy');
+// 报错 属性“name”为私有属性，只能在类“Kolento”中访问
+console.log('Cindy',Cindy.name)
+
+```
+* **`protected`修饰符可以让被继承的子类访问，但是不能被自身和子类之外的地方访问**
+```
+class Kolento{
+    protected name:string
+    constructor(name:string){
+        this.name=name
+    }
+    hello(){
+        console.log('hello');
+    }
+}
+// const k = new Kolento('kkk');
+
+class C extends Kolento{
+    constructor(name:string){
+        super(name);
+    }
+    test(){
+        // name在子类中可以被访问
+        console.log(this.name)
+    }
+}
+const Cindy = new C('happy');
+// 报错 属性“name”受保护，只能在类“Kolento”及其子类中访问
+console.log(Cindy.name)
+// 可以通过子类方法中访问
+Cindy.test()
+```
+**总结**<br/>
+* `public` : 类 默认修饰符为public，可以被任意访问<br/>
+* `private` : 只有自身可以访问，子类只能继承不能访问<br/>
+* `protected` : 只有自身和子类可以访问，外部依旧不能访问。<br/>
+
+#### readonly只读属性
+1.`readonly`修饰符下的属性只能读取不能修改<br />
+2.只读属性，但是在构造函数中可以修改
+```
+class X{
+    //只读属性，但是在构造函数中可以修改
+    readonly age:number
+    constructor(age:number){
+        this.age=age
+    }
+    update(){
+        //报错 无法为“age”赋值，因为它是只读属性
+        this.age=18
+    }
+}
+```
+
+### 抽象类
+* 通过`abstract`关键字定义一个抽象类<br />
+* 也可以通过这个关键字定义 抽象属性和抽象方法。<br />
+1.抽象类不允许被实例化<br/>
+2.抽象类的作用主要是服务与它的子类<br/>
+
+**错误的写法：**
+```
+// 抽象类不能够被实例化
+abstract class Y{
+    abstract name:String
+    //报错 不能在构造函数中访问类“Y”中的抽象属性“name”
+    constructor(name){
+        this.name=name
+    }
+    // 报错 方法“hello”不能具有实现，因为它标记为抽象
+    abstract hello(){
+        console.log('hello')
+    }
+    
+}
+
+//  报错 非抽象类不能继承抽象类的属性和方法
+class Z extends Y{
+    constructor(name){
+        super(name)
+    }
+}
+```
+
+**写法思路与作用**<br/>
+1.抽象类中的抽象属性和方法不能有具体实现，只能简单定义。<br />
+2.抽象类的作用就是为子类服务，子类可以通过继承后具体实现抽象类中的属性和方法。<br/>
+
+**正确的写法：**<br/>
+```
+// 抽象类不能够被实例化
+abstract class Y{
+    abstract name:String
+
+    // 报错 方法“hello”不能具有实现，因为它标记为抽象
+    abstract hello()
+    
+}
+
+class Z extends Y{
+    name: String
+    constructor(name){
+        super()
+        this.name=name;
+    }
+    hello() {
+        console.log('hello');
+    }
+}
+```
+
+#### 类的类型
+1.类可以被作为类型声明使用。<br />
+2.类中的属性方法和被声明的类 的属性方法必须相同才能使用。
+```
+class Car{
+    name:string
+    constructor(name:string){
+        this.name=name
+    }
+}
+class Food{
+    name:string
+    price:number
+    constructor(name:string,price:number){
+        this.name=name
+        this.price=price
+    }
+}
+// 把类Car 作为类型传给了car
+const car :Car = new Car('bmw');
+
+// 报错 类型 "Car" 中缺少属性 "price"，但类型 "Food" 中需要该属性
+const car :Food = new Car('bmw');
+```
+
+## 类与接口
+### 类和接口的应用
+**接口与类的结合**<br />
+通过接口的形式，对类的形状进行描述和约束。<br />
+```
+// 定义一个接口
+interface Sing{
+    sing()
+}
+
+// 通过implements 使得类来实现之前定义的接口
+// 接口与类的结合，也是通过接口来约束这个类的格式形状
+class Man implements Sing{
+    sing() {
+        console.log('蔡徐坤');
+    }
+
+}
+
+class Woman implements Sing{
+    sing() {
+        console.log('鸡你太美');
+    }
+}
+const man = new Man();
+const woman = new Woman();
+man.sing();
+woman.sing();
+```
+
+### 一个类与多个接口
+* 当使用一个类与多个接口时候，通过逗号`，`进行分割。
+```
+// 定义一个接口
+interface Sing{
+    sing()
+}
+interface Dance{
+    dance()
+}
+interface Rap{
+    rap()
+}
+interface Baskerball{
+    basketball()
+}
+
+class Caixukun implements Sing,Dance,Rap,Baskerball{
+    sing() {
+        console.log('唱');
+    }
+    dance() {
+        console.log('跳');
+    }
+    rap(){
+        console.log('rap')
+    }
+    basketball(){
+        console.log('篮球')
+    }
+
+}
+
+
+const cai = new Caixukun();
+
+cai.sing();
+cai.dance();
+cai.rap();
+cai.basketball();
+
+// 返回
+// 唱
+// 跳
+// rap
+// 篮球
+```
+
+### 接口继承接口
+使用接口继承接口的方法，就不用像上面那样，当一个类设置多个接口的时候，使用逗号分割了。<br/>
+* 用一个新的接口，继承其他几个接口<br />
+* 类的格式使用新的接口进行规范设置即可
+
+```
+interface Sing{
+    sing()
+}
+
+interface Dance{
+    dance()
+}
+
+// 通过声明一个新的接口来继承原先的两个接口
+interface Cool extends Sing,Dance{
+
+}
+
+class Caixukun implements Cool{
+    sing(){
+        console.log('唱歌')
+    }
+    dance(){
+        console.log('跳舞')
+    }
+}
+```
+
+
+
+
+
+
+
 
 
 

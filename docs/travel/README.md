@@ -1,7 +1,7 @@
 # 旅行相簿
 ## 厦门2014
-第一次去厦门，这时候的鼓浪屿还没有被自然灾害破坏。<br/>
-风景很不多~<br />
+第一次去厦门<br/>
+这时候的鼓浪屿还没有被自然灾害破坏。<br/>
 
 <img src="/travel/xiamen2014/xiamen1.jpg" width="49%" />
 <img src="/travel/xiamen2014/xiamen5.jpg" width="49%" />
@@ -33,4 +33,75 @@
 <img src="/travel/xiamen2014/xiamen28.jpg" width="32.5%" />
 <img src="/travel/xiamen2014/xiamen29.jpg" width="32.5%" />
 <img src="/travel/xiamen2014/xiamen30.jpg" width="32.5%" />
+
+## 厦门2016
+第二次去厦门 <br/>
+
+<img src="/travel/xiamen2016/xiamen1.jpg" width="49%" />
+<img src="/travel/xiamen2016/xiamen1.5.jpg" width="49%" />
+<img src="/travel/xiamen2016/xiamen6.jpg" width="49%" />
+<img src="/travel/xiamen2016/xiamen4.jpg" width="49%" />
+<img src="/travel/xiamen2016/xiamen2.jpg" width="49%" />
+<img src="/travel/xiamen2016/xiamen3.jpg" width="49%" />
+<img src="/travel/xiamen2016/xiamen2.5.jpg" width="32.5%" />
+<img src="/travel/xiamen2016/xiamen5.jpg" width="32.5%" />
+<img src="/travel/xiamen2016/xiamen7.jpg" width="32.5%" />
+<img src="/travel/xiamen2016/xiamen8.jpg" width="32.5%" />
+<img src="/travel/xiamen2016/xiamen9.jpg" width="32.5%" />
+<img src="/travel/xiamen2016/xiamen10.jpg" width="32.5%" />
+<img src="/travel/xiamen2016/xiamen11.jpg" width="32.5%" />
+<img src="/travel/xiamen2016/xiamen12.jpg" width="32.5%" />
+<img src="/travel/xiamen2016/xiamen27.jpg" width="32.5%" />
+<img src="/travel/xiamen2016/xiamen13.jpg" width="32.5%" />
+<img src="/travel/xiamen2016/xiamen14.jpg" width="32.5%" />
+<img src="/travel/xiamen2016/xiamen15.jpg" width="32.5%" />
+<img src="/travel/xiamen2016/xiamen16.jpg" width="32.5%" />
+<img src="/travel/xiamen2016/xiamen17.jpg" width="32.5%" />
+<img src="/travel/xiamen2016/xiamen18.jpg" width="32.5%" />
+<img src="/travel/xiamen2016/xiamen19.jpg" width="32.5%" />
+<img src="/travel/xiamen2016/xiamen20.jpg" width="32.5%" />
+<img src="/travel/xiamen2016/xiamen26.jpg" width="32.5%" />
+<img src="/travel/xiamen2016/xiamen21.jpg" width="49%" />
+<img src="/travel/xiamen2016/xiamen23.jpg" width="49%" />
+<img src="/travel/xiamen2016/xiamen24.jpg" width="49%" />
+<img src="/travel/xiamen2016/xiamen25.jpg" width="49%" />
+
+## 重庆2020
+重庆 美食 泰裤辣 <br/>
+
+<img src="/travel/chongqing2020/chongqing22.jpg" width="100%" />
+<img src="/travel/chongqing2020/chongqing27.jpg" width="100%" />
+<img src="/travel/chongqing2020/chongqing30.jpg" width="100%" />
+<img src="/travel/chongqing2020/chongqing1.jpg" width="32.5%" />
+<img src="/travel/chongqing2020/chongqing2.jpg" width="32.5%" />
+<img src="/travel/chongqing2020/chongqing3.jpg" width="32.5%" />
+<img src="/travel/chongqing2020/chongqing10.jpg" width="32.5%" />
+<img src="/travel/chongqing2020/chongqing11.jpg" width="32.5%" />
+<img src="/travel/chongqing2020/chongqing12.jpg" width="32.5%" />
+<img src="/travel/chongqing2020/chongqing4.jpg" width="49%" />
+<img src="/travel/chongqing2020/chongqing5.jpg" width="49%" />
+<img src="/travel/chongqing2020/chongqing6.jpg" width="49%" />
+<img src="/travel/chongqing2020/chongqing7.jpg" width="49%" />
+<img src="/travel/chongqing2020/chongqing8.jpg" width="49%" />
+<img src="/travel/chongqing2020/chongqing9.jpg" width="49%" />
+<img src="/travel/chongqing2020/chongqing18.jpg" width="49%" />
+<img src="/travel/chongqing2020/chongqing20.jpg" width="49%" />
+<img src="/travel/chongqing2020/chongqing21.jpg" width="32.5%" />
+<img src="/travel/chongqing2020/chongqing24.jpg" width="32.5%" />
+<img src="/travel/chongqing2020/chongqing25.jpg" width="32.5%" />
+<img src="/travel/chongqing2020/chongqing14.jpg" width="49%" />
+<img src="/travel/chongqing2020/chongqing38.jpg" width="49%" />
+<img src="/travel/chongqing2020/chongqing16.jpg" width="49%" />
+<img src="/travel/chongqing2020/chongqing17.jpg" width="49%" />
+<img src="/travel/chongqing2020/chongqing19.jpg" width="49%" />
+<img src="/travel/chongqing2020/chongqing23.jpg" width="49%" />
+<img src="/travel/chongqing2020/chongqing28.jpg" width="32.5%" />
+<img src="/travel/chongqing2020/chongqing29.jpg" width="32.5%" />
+<img src="/travel/chongqing2020/chongqing31.jpg" width="32.5%" />
+<img src="/travel/chongqing2020/chongqing32.jpg" width="32.5%" />
+<img src="/travel/chongqing2020/chongqing33.jpg" width="32.5%" />
+<img src="/travel/chongqing2020/chongqing35.jpg" width="32.5%" />
+<img src="/travel/chongqing2020/chongqing36.jpg" width="32.5%" />
+<img src="/travel/chongqing2020/chongqing37.jpg" width="32.5%" />
+<img src="/travel/chongqing2020/chongqing39.jpg" width="32.5%" />
 
