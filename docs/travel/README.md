@@ -43,7 +43,7 @@
 <img src="/travel/xiamen2016/xiamen4.jpg" width="49%" />
 <img src="/travel/xiamen2016/xiamen2.jpg" width="49%" />
 <img src="/travel/xiamen2016/xiamen3.jpg" width="49%" />
-<img src="/travel/xiamen2016/xiamen2.5.jpg" width="32.5%" />
+<img src="/travel/xiamen2016/xiamen28.jpg" width="32.5%" />
 <img src="/travel/xiamen2016/xiamen5.jpg" width="32.5%" />
 <img src="/travel/xiamen2016/xiamen7.jpg" width="32.5%" />
 <img src="/travel/xiamen2016/xiamen8.jpg" width="32.5%" />
@@ -66,8 +66,32 @@
 <img src="/travel/xiamen2016/xiamen24.jpg" width="49%" />
 <img src="/travel/xiamen2016/xiamen25.jpg" width="49%" />
 
+## 成都2018
+美食 慢节奏 <br/>
+
+<img src="/travel/chengdu2018/chengdu2.jpg" width="49%" />
+<img src="/travel/chengdu2018/chengdu3.jpg" width="49%" />
+<img src="/travel/chengdu2018/chengdu4.jpg" width="49%" />
+<img src="/travel/chengdu2018/chengdu5.jpg" width="49%" />
+<img src="/travel/chengdu2018/chengdu12.jpg" width="49%" />
+<img src="/travel/chengdu2018/chengdu13.jpg" width="49%" />
+<img src="/travel/chengdu2018/chengdu14.jpg" width="49%" />
+<img src="/travel/chengdu2018/chengdu15.jpg" width="49%" />
+<img src="/travel/chengdu2018/chengdu16.jpg" width="49%" />
+<img src="/travel/chengdu2018/chengdu17.jpg" width="49%" />
+<img src="/travel/chengdu2018/chengdu18.jpg" width="32.5%" />
+<img src="/travel/chengdu2018/chengdu19.jpg" width="32.5%" />
+<img src="/travel/chengdu2018/chengdu20.jpg" width="32.5%" />
+<img src="/travel/chengdu2018/chengdu6.jpg" width="32.5%" />
+<img src="/travel/chengdu2018/chengdu7.jpg" width="32.5%" />
+<img src="/travel/chengdu2018/chengdu8.jpg" width="32.5%" />
+<img src="/travel/chengdu2018/chengdu9.jpg" width="32.5%" />
+<img src="/travel/chengdu2018/chengdu10.jpg" width="32.5%" />
+<img src="/travel/chengdu2018/chengdu11.jpg" width="32.5%" />
+
+
 ## 重庆2020
-重庆 美食 泰裤辣 <br/>
+重庆 美食 泰裤辣 出租车开车很猛<br/>
 
 <img src="/travel/chongqing2020/chongqing22.jpg" width="100%" />
 <img src="/travel/chongqing2020/chongqing27.jpg" width="100%" />

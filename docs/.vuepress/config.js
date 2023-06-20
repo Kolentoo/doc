@@ -26,7 +26,7 @@ module.exports = {
               { text: 'JavaScript', link: '/VuePress/' },
               { text: 'ES6', link: '/VuePress/' },
               { text: 'VuePress', link: '/VuePress/' },
-              { text: 'MarkDown', link: '/MarkDown/' },
+              { text: 'MarkDown', link: '/markdown/' },
               { text: 'Kplayer', link: '/kplayer/' }
           ]},
       { text: '个人简历', 

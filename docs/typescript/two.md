@@ -501,7 +501,7 @@ const car :Food = new Car('bmw');
 ### 类和接口的应用
 **接口与类的结合**<br />
 通过接口的形式，对类的形状进行描述和约束。<br />
-```
+```typescript
 // 定义一个接口
 interface Sing{
     sing()
@@ -529,7 +529,7 @@ woman.sing();
 
 ### 一个类与多个接口
 * 当使用一个类与多个接口时候，通过逗号`，`进行分割。
-```
+```typescript
 // 定义一个接口
 interface Sing{
     sing()
@@ -580,7 +580,7 @@ cai.basketball();
 * 用一个新的接口，继承其他几个接口<br />
 * 类的格式使用新的接口进行规范设置即可
 
-```
+```typescript
 interface Sing{
     sing()
 }
@@ -603,6 +603,238 @@ class Caixukun implements Cool{
     }
 }
 ```
+
+### 接口继承类
+在ts中，接口可以继承类。<br />
+因为在我们声明一个类的同时，其实也声明了一个类型。
+```typescript
+// 这里我们既声明了一个类，又可以把类当做类型使用。
+class Car{
+    name:string
+    constructor(name:string){
+        this.name=name
+    }
+}
+// 把类Car 作为类型传给了car
+const car :Car = new Car('bmw');
+```
+**尝试通过接口继承类**
+```typescript
+// 定义一个普通类
+class Person{
+    name:string
+    constructor(name:string){
+        this.name=name
+    }
+    hello(){
+        console.log('hello')
+    }
+}
+// 通过接口去继承这个类
+interface Man extends Person{
+    age:number
+}
+// 将接口Man设置在p上面
+// 发现这个Man上面存在age name 和hello方法，说明都继承上了
+// 报错 类型“{}”缺少类型“Man”中的以下属性: age, name, hello
+let p:Man={}
+// 正确的写法 必须要包含这些内容
+let people:Man={
+    name:'',
+    age:18,
+    hello(){
+
+    }
+}
+```
+
+## 声明合并
+如果定义了两个相同名字的函数、接口或类，那么他们会合并成一个类型。<br/>
+### 函数的合并
+参照函数重载 <br/>
+允许一个函数接受不同数量或者类型的参数时，做出不同的处理。 也就是同一个函数，通过不同类型的参数，返回不同的结果。<br/>
+```typescript
+function add(x:string,y:string):string
+function add(x;number,y:number):number
+
+// 参数为数字：相加
+// 参数为字符串：拼接
+function add(x:string|number,y:string|number):string|number{
+    if(typeof x=='string' && typeof y =='string'){
+        return x+y //字符串拼接
+    }else if(typeof x=='number' && typeof y =='number'){
+        return x+y //数值相加
+    }
+}
+
+console.log(add(11,22)) //返回 33
+console.log(add('前端','测试')) // 返回 前端测试
+```
+### 接口的合并
+当出现两个同名的接口时，会合并他们变成一个接口<br/>
+```typescript
+interface Cat{
+    name:'小猫咪',
+    sex:'mail'
+}
+
+interface Cat{
+    name:'小猫咪',
+    age:3
+}
+// 以上两个接口合并成了一个接口，这里有3个属性了
+const cat:Cat={
+    name:'小猫咪',
+    age:3,
+    sex:'mail'
+}
+```
+### 类的合并
+类的合并与接口的合并一致。
+
+## 泛型
+泛型是指在定义函数、接口或类的时候，不提前指定具体类型，而是在使用的时候再执行类型的一种特性。<br />
+### 简单案例
+**使用场景:** 在类型不确定的时候使用。<br/>
+```typescript
+// 定义一个函数 参数1的类型不确定，参数2的类型为数值
+// 返回一个数组
+// T表示可以输入任意类型，等到执行时根据参数类型再指定当前类型
+function test<T>(value:T,count:number):T[]{
+    const arr:T[]=[];
+    for(let i = 0;i < count;i++){
+        arr.push(value);
+    }
+    return arr;
+}
+// 返回 [ 123, 123, 123, 123, 123 ]
+console.log(test(123,5)) 
+// 返回 [ '111', '111', '111', '111', '111' ]
+console.log(test('111',5))
+```
+#### 注意<br/>
+1.泛型的这个 T 字母可以随意替换，只要在方法中保持一致即可。<br />
+2.使用泛型后，就会根据传参的具体参数类型，去在方法执行的时候指定类型。这一点不同于`any`，`any`不会指定类型，只是允许所有的类型。<br />
+3.注意要先用`<T>`来标明泛型，才能在后面使用。
+
+### 多个泛型参数
+* 在尖括弧里面可以定义多个泛型
+* 一般用在参数中包含多个不同类型，多个参数不确定类型的情况下<br/>
+```ts
+// 需求背景
+// 将[123,'123'] 修改成 ['123',123]
+// 因为这里t是一个元组，而元组里面的元素可能都是不同类型
+// 因此需要在这里定义类型时，使用多个泛型
+function update<T,U>(t:[T,U]):[U,T]{
+    return [t[1],t[0]]
+}
+console.log(update(['111',222]));
+// 返回 [ 2222, '1111' ]
+```
+
+### 泛型约束
+理论上来说，泛型的类型是不确定的，但是可以通过方法中使用的属性，来确定一个范围<br />
+例如下面的例子中`x.length`，如果`x`为数值，是不存在`length`属性的。<br />
+那么我们可以通过这一点对这里的泛型进行约束。<br />
+```ts
+// 方法目的：获取参数的长度
+// 由于不知道参数x是什么类型，因此使用泛型
+function getLength<T>(x:T):number{
+    // 报错 类型“T”上不存在属性“length”。
+    // 因为数字不存在属性length
+    return x.length
+}
+```
+通过**泛型约束**来指定参数的类型，必须要有`length`属性<br/>
+实现如下：<br />
+```ts
+// 首先定义一个接口，指定必须有length属性
+interface HasLength{
+    length:number
+}
+// 然后再方法后将泛型通过刚才指定的接口进行属性的约束
+// 这样方法里的x.length就不会报错了
+function getLength<T extends HasLength>(x:T):number{
+    return x.length
+}
+
+console.log(getLength('123'))
+// 报错 类型“number”的参数不能赋给类型“HasLength”的参数
+console.log(getLength(456))
+```
+这样就成功约束了参数必须有length的属性。<br/>
+当传入 数值456 的时候，就会报错提醒，456没有length的属性。<br/>
+
+**总结**<br/>
+实际上还是通过了泛型类型继承到接口上，被接口约束。这一点还挺妙的。
+
+### 泛型接口
+使用泛型接口去约束函数<br/>
+1.定义一个泛型接口。<br/>
+2.在函数表达式上，使用这个泛型接口。<br/>
+* 第一种写法 将泛型卸载函数上<br/>
+```ts
+// 定义一个泛型接口 value参数和返回的数组 类型都不确定
+interface Arr{
+    <T>(value:T,count:number):T[]
+}
+
+// 通过泛型接口来约束我们的函数
+let getArr:Arr = <T>(value:T,count:number):T[]{
+    const arr:T[]=[];
+    for(let i = 0;i<count;i++){
+        arr.push(value)
+    }
+    return arr
+}
+```
+* 第二种写法<br/>
+如果将泛型卸载接口上了，那在使用接口约束函数表达式时，需要在设置的时候，指定泛型的具体类型。
+```ts
+// 定义一个泛型接口 value参数和返回的数组 类型都不确定
+interface Arr2<T>{
+    (value:T,count:number):T[]
+}
+
+// 通过泛型接口来约束我们的函数
+let getArr2:Arr2<string> = <T>(value:T,count:number):T[]{
+    const arr:T[]=[];
+    for(let i = 0;i<count;i++){
+        arr.push(value)
+    }
+    return arr
+}
+```
+
+### 泛型类
+1.简单的说就是创建一个泛型类，这个类中的属性存在不确定性，先使用泛型表示。<br />
+2.在实例化声明的时候，这时候可以具体传参了，通过具体的参数，在尖括弧里进行具体的类型的声明。
+
+```ts
+// 创建一个泛型类，假定对这个age属性的类型不确定
+class Person<T>{
+    name:string
+    age:T
+    constructor(name:string,age:T){
+        this.name=name
+        this.age=age
+    }
+}
+
+// 类型“number”的参数不能赋给类型“string”的参数
+// 因为这里在传参的时候给泛型定义成了string所以报错
+// 泛型是在传参的那一刻才明白参数类型的
+const p1 = new Person<string>('kolento',20)
+// 正常执行
+const p2 = new Person<string>('kolento','20')
+const p3 = new Person<number>('kolento',20)
+```
+
+**TS的学习笔记就此完结，后续有更新再进行补充。**
+
+
+
+
 
 
 
