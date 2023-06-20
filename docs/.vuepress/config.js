@@ -82,7 +82,7 @@ module.exports = {
       '/VuePress/': [
         '',      /* /bar/ */
       ],
-      '/MarkDown/': [
+      '/markdown/': [
         '',      /* /bar/ */
       ],
       '/kplayer/': [
