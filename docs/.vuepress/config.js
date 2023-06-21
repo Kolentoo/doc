@@ -4,6 +4,7 @@ module.exports = {
   // 注入到当前页面的 HTML <head> 中的标签
   head: [
     ['link', { rel: 'icon', href: '/kolento.png' }], // 增加一个自定义的 favicon(网页标签的图标)
+    ['script',{src:'/script/index.js'}]
   ],
   dest: './dist', 
   // base: '/kolento2023/', // 这是部署到github相关的配置 打包的时候用这个配置

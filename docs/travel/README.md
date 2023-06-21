@@ -129,3 +129,42 @@
 <img src="/travel/chongqing2020/chongqing37.jpg" width="32.5%" />
 <img src="/travel/chongqing2020/chongqing39.jpg" width="32.5%" />
 
+## 迪士尼
+<img src="/travel/dishini/dishini10.jpg" width="49%" />
+<img src="/travel/dishini/dishini11.jpg" width="49%" />
+<img src="/travel/dishini/dishini01.jpg" width="32.5%" />
+<img src="/travel/dishini/dishini02.jpg" width="32.5%" />
+<img src="/travel/dishini/dishini03.jpg" width="32.5%" />
+<img src="/travel/dishini/dishini04.jpg" width="32.5%" />
+<img src="/travel/dishini/dishini05.jpg" width="32.5%" />
+<img src="/travel/dishini/dishini06.jpg" width="32.5%" />
+<img src="/travel/dishini/dishini07.jpg" width="32.5%" />
+<img src="/travel/dishini/dishini08.jpg" width="32.5%" />
+<img src="/travel/dishini/dishini09.jpg" width="32.5%" />
+
+## 薛之谦演唱会
+<img src="/travel/yanchanghui/yanchanghui7.jpg" width="100%" />
+<img src="/travel/yanchanghui/yanchanghui8.jpg" width="100%" />
+<img src="/travel/yanchanghui/yanchanghui1.jpg" width="32.5%" />
+<img src="/travel/yanchanghui/yanchanghui2.jpg" width="32.5%" />
+<img src="/travel/yanchanghui/yanchanghui3.jpg" width="32.5%" />
+<img src="/travel/yanchanghui/yanchanghui4.jpg" width="32.5%" />
+<img src="/travel/yanchanghui/yanchanghui5.jpg" width="32.5%" />
+<img src="/travel/yanchanghui/yanchanghui9.jpg" width="32.5%" />
+
+## 文艺复兴展
+<img src="/travel/wenyifuxing/wenyi9.jpg" width="100%" />
+<img src="/travel/wenyifuxing/wenyi1.jpg" width="49%" />
+<img src="/travel/wenyifuxing/wenyi2.jpg" width="49%" />
+<img src="/travel/wenyifuxing/wenyi3.jpg" width="49%" />
+<img src="/travel/wenyifuxing/wenyi4.jpg" width="49%" />
+<img src="/travel/wenyifuxing/wenyi5.jpg" width="49%" />
+<img src="/travel/wenyifuxing/wenyi6.jpg" width="49%" />
+<img src="/travel/wenyifuxing/wenyi7.jpg" width="49%" />
+<img src="/travel/wenyifuxing/wenyi10.jpg" width="49%" />
+<img src="/travel/wenyifuxing/wenyi11.jpg" width="49%" />
+<img src="/travel/wenyifuxing/wenyi12.jpg" width="49%" />
+
+
+
+
