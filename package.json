@@ -13,6 +13,7 @@
   "author": "kolento",
   "license": "ISC",
   "devDependencies": {
+    "v-dialogs": "^2.2.0",
     "vuepress": "^1.9.9"
   }
 }

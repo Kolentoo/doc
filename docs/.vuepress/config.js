@@ -21,10 +21,10 @@ module.exports = {
           items: [
               { text: 'Vue3',  link: '/Vue3/' },
               { text: 'TypeScript', link: '/typescript/' },
-              { text: 'React', link: '/VuePress/' },
-              { text: '微信小程序', link: '/VuePress/' },
-              { text: 'JavaScript', link: '/VuePress/' },
-              { text: 'ES6', link: '/VuePress/' },
+              // { text: 'React', link: '/VuePress/' },
+              // { text: '微信小程序', link: '/VuePress/' },
+              // { text: 'JavaScript', link: '/VuePress/' },
+              // { text: 'ES6', link: '/VuePress/' },
               { text: 'VuePress', link: '/VuePress/' },
               { text: 'MarkDown', link: '/markdown/' },
               { text: 'Kplayer', link: '/kplayer/' }

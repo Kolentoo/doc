@@ -4,7 +4,7 @@ heroImage: logo.png
 heroText: K o l e n t o
 tagline: 让 美 好 触 手 可 及
 actionText: 我的笔记 →
-actionLink: /zh/guide/
+actionLink: /typescript/
 features:
 - title: 学习笔记
   details: 关于Vue、VuePress、JavaScript、TypeScript、ES6/7、nodejs、React、微信小程序、Webpack、Electron等学习笔记记录。
