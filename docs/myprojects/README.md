@@ -7,16 +7,16 @@
 目前由于服务器到期，已经停止维护。仅作为项目记录留念。
 ### 图片介绍
 
-<img src="/projects/home1.jpg" width="49%" />
-<img src="/projects/home2.jpg" width="49%" />
-<img src="/projects/home3.jpg" width="49%" />
-<img src="/projects/anime1.jpg" width="49%" />
-<img src="/projects/movie1.jpg" width="49%" />
-<img src="/projects/tv1.jpg" width="49%" />
-<img src="/projects/novel1.jpg" width="49%" />
-<img src="/projects/novel2.jpg" width="49%" />
-<img src="/projects/detail1.jpg" width="49%" />
-<img src="/projects/myself.png" width="49%" />
+<img src="/projects/miniProgram/home1.jpg" width="49%" />
+<img src="/projects/miniProgram/home2.jpg" width="49%" />
+<img src="/projects/miniProgram/home3.jpg" width="49%" />
+<img src="/projects/miniProgram/anime1.jpg" width="49%" />
+<img src="/projects/miniProgram/movie1.jpg" width="49%" />
+<img src="/projects/miniProgram/tv1.jpg" width="49%" />
+<img src="/projects/miniProgram/novel1.jpg" width="49%" />
+<img src="/projects/miniProgram/novel2.jpg" width="49%" />
+<img src="/projects/miniProgram/detail1.jpg" width="49%" />
+<img src="/projects/miniProgram/myself.png" width="49%" />
 
 ### 内容
 #### 主要包含以下内容

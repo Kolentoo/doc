@@ -33,6 +33,7 @@ module.exports = {
           items: [
           { text: '简历信息',  link: '/aboutme/' },
           { text: '项目经验', link: '/projects/' },
+          { text: '个人项目', link: '/myprojects/' },
       ]},
       { text: '生活记录', 
         items: [
@@ -67,7 +68,9 @@ module.exports = {
         '',      /* /bar/ */
         'one', /* /bar/one.html */
         'two' ,  /* /bar/two.html */
-        'myself'   /* /bar/myself.html */
+      ],
+      '/myprojects/': [
+        '',      /* /bar/ */
       ],
       '/comments/': [
         '',      /* /bar/ */
