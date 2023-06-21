@@ -39,3 +39,30 @@
 服务端：linux<br/>
 数据库：mysql（用于数据存储）<br/>
 数据来源：puppetter （每日定期爬虫爬取数据存储到数据库）<br/>
+
+## 个人官网
+### 项目介绍
+主要基于 Vue2.x 进行开发。纯属个人兴趣的开发。<br/>
+
+### 图片介绍
+<img src="/projects/home/home1.jpg" width="100%" />
+<img src="/projects/home/home1.5.jpg" width="100%" />
+<img src="/projects/home/home2.jpg" width="100%" />
+<img src="/projects/home/discover.jpg" width="100%" />
+<img src="/projects/home/discover2.jpg" width="100%" />
+<img src="/projects/home/game.jpg" width="100%" />
+
+## 聊天室
+### 项目介绍
+基于 **Vue、Electron与websocket** 进行开发的聊天室软件。<br/>
+**功能：**
+* 登录功能、注册名称功能
+* 可以多人在一个聊天室内进行文字聊天、发送表情包等功能。
+* 进入聊天室提醒功能。
+
+### 图片介绍
+<img src="/projects/chat/denglu.jpg" width="100%" />
+<img src="/projects/chat/chat1.jpg" width="100%" />
+<img src="/projects/chat/chat2.jpg" width="100%" />
+
+
