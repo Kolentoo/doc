@@ -66,8 +66,6 @@ module.exports = {
       ],
       '/projects/': [
         '',      /* /bar/ */
-        'one', /* /bar/one.html */
-        'two' ,  /* /bar/two.html */
       ],
       '/myprojects/': [
         '',      /* /bar/ */
