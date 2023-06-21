@@ -4,7 +4,7 @@
 **职位：** 前端工程师<br/>
 **地区：** 上海<br/>
 **技术栈：** Vue2 / Vue3 / JavaScript / TypeScript / Node / 微信小程序<br/>
-<div><img src="/me/me2022.jpg" width="30%" /></div>
+<div><img :src="$withBase('/me/me2022.jpg')" width="30%" /></div>
 
 ## 个人优势
 1.有**9年的web以前端开发经验**，包括移动端和PC端；<br/>

@@ -12,16 +12,16 @@
 
 #### 项目图片 
 <br/>
-<img src="/projects/tuozhuai/denglu.jpg" width="100%">
-<img src="/projects/tuozhuai/chuangjianduihua1.png" width="100%">
-<img src="/projects/tuozhuai/chuangjianduihua2.png" width="100%">
-<img src="/projects/tuozhuai/chuangjianduihua3.png" width="100%">
-<img src="/projects/tuozhuai/duihuabaobiao.png" width="100%">
-<img src="/projects/tuozhuai/zidingyibaobiao.jpg" width="100%">
-<img src="/projects/tuozhuai/chuangjianbaobiao1.jpg" width="100%">
-<img src="/projects/tuozhuai/chuangjianbaobiao2.jpg" width="100%">
-<img src="/projects/tuozhuai/chuangjianbaobiao3.jpg" width="100%">
-<img src="/projects/tuozhuai/hangyeshuyu.png" width="100%">
+<img :src="$withBase('/projects/tuozhuai/denglu.jpg')" width="100%">
+<img :src="$withBase('/projects/tuozhuai/chuangjianduihua1.png')" width="100%">
+<img :src="$withBase('/projects/tuozhuai/chuangjianduihua2.png')" width="100%">
+<img :src="$withBase('/projects/tuozhuai/chuangjianduihua3.png')" width="100%">
+<img :src="$withBase('/projects/tuozhuai/duihuabaobiao.png')" width="100%">
+<img :src="$withBase('/projects/tuozhuai/zidingyibaobiao.jpg')" width="100%">
+<img :src="$withBase('/projects/tuozhuai/chuangjianbaobiao1.jpg')" width="100%">
+<img :src="$withBase('/projects/tuozhuai/chuangjianbaobiao2.jpg')" width="100%">
+<img :src="$withBase('/projects/tuozhuai/chuangjianbaobiao3.jpg')" width="100%">
+<img :src="$withBase('/projects/tuozhuai/hangyeshuyu.png')" width="100%">
 
 ### 话加后台管理系统4000端新版
 #### 项目介绍
@@ -33,14 +33,14 @@
 
 #### 项目图片
 <br/>
-<img src="/projects/4000/denglu.jpg" width="100%">
-<img src="/projects/4000/dianhurenwu.jpg" width="100%">
-<img src="/projects/4000/dianhurenwu2.jpg" width="100%">
-<img src="/projects/4000/jiankong.jpg" width="100%">
-<img src="/projects/4000/renlianshibie.jpg" width="100%">
-<img src="/projects/4000/zhijian1.jpg" width="100%">
-<img src="/projects/4000/zidongrenwu.jpg" width="100%">
-<img src="/projects/4000/screen.png" width="100%">
+<img :src="$withBase('/projects/4000/denglu.jpg')" width="100%">
+<img :src="$withBase('/projects/4000/dianhurenwu.jpg')" width="100%">
+<img :src="$withBase('/projects/4000/dianhurenwu2.jpg')" width="100%">
+<img :src="$withBase('/projects/4000/jiankong.jpg')" width="100%">
+<img :src="$withBase('/projects/4000/renlianshibie.jpg')" width="100%">
+<img :src="$withBase('/projects/4000/zhijian1.jpg')" width="100%">
+<img :src="$withBase('/projects/4000/zidongrenwu.jpg')" width="100%">
+<img :src="$withBase('/projects/4000/screen.png')" width="100%">
 
 ### 话加后台管理系统3000端新版
 1. 项目基于 **Vue2和ElementUi** 进行开发。主要都是对项目、任务、订单、业务、报表等一些内容的配置、新建和编辑。配置的信息会在4000版本的系统中更新显示，两个系统是互通的。<br/>
@@ -48,11 +48,11 @@
 
 #### 项目图片
 <br/>
-<img src="/projects/3000/shouye.jpg" width="100%">
-<img src="/projects/3000/chanpinshezhi.jpg" width="100%">
-<img src="/projects/3000/kanban.jpg" width="100%">
-<img src="/projects/3000/huashushezhi.jpg" width="100%">
-<img src="/projects/3000/xiangmuguanli1.jpg" width="100%">
+<img :src="$withBase('/projects/3000/shouye.jpg')" width="100%">
+<img :src="$withBase('/projects/3000/chanpinshezhi.jpg')" width="100%">
+<img :src="$withBase('/projects/3000/kanban.jpg')" width="100%">
+<img :src="$withBase('/projects/3000/huashushezhi.jpg')" width="100%">
+<img :src="$withBase('/projects/3000/xiangmuguanli1.jpg')" width="100%">
 
 ### 话加后台系统4000旧版
 1. 项目基于 **Vue2和ElementUi** 进行开发。<br/>
@@ -60,10 +60,10 @@
 
 #### 项目图片
 <br/>
-<img src="/projects/4000_2/denglu.jpg" width="100%">
-<img src="/projects/4000_2/shouye.jpg" width="100%">
-<img src="/projects/4000_2/tonghuajilu.jpg" width="100%">
-<img src="/projects/4000_2/dingdanxinxi.jpg" width="100%">
+<img :src="$withBase('/projects/4000_2/denglu.jpg')" width="100%">
+<img :src="$withBase('/projects/4000_2/shouye.jpg')" width="100%">
+<img :src="$withBase('/projects/4000_2/tonghuajilu.jpg')" width="100%">
+<img :src="$withBase('/projects/4000_2/dingdanxinxi.jpg')" width="100%">
 
 ### OEM机器人后台系统
 #### 项目介绍
@@ -78,13 +78,13 @@
 
 #### 项目图片
 <br/>
-<img src="/projects/OEM/denglu.jpg" width="100%">
-<img src="/projects/OEM/gongzuotai.jpg" width="100%">
-<img src="/projects/OEM/huashuguanli.jpg" width="100%">
-<img src="/projects/OEM/huashushichang.jpg" width="100%">
-<img src="/projects/OEM/hujiaojilu.jpg" width="100%">
-<img src="/projects/OEM/kongzhitai1.jpg" width="100%">
-<img src="/projects/OEM/kongzhitai2.jpg" width="100%">
+<img :src="$withBase('/projects/OEM/denglu.jpg')" width="100%">
+<img :src="$withBase('/projects/OEM/gongzuotai.jpg')" width="100%">
+<img :src="$withBase('/projects/OEM/huashuguanli.jpg')" width="100%">
+<img :src="$withBase('/projects/OEM/huashushichang.jpg')" width="100%">
+<img :src="$withBase('/projects/OEM/hujiaojilu.jpg')" width="100%">
+<img :src="$withBase('/projects/OEM/kongzhitai1.jpg')" width="100%">
+<img :src="$withBase('/projects/OEM/kongzhitai2.jpg')" width="100%">
 
 ### 话术数据大屏
 #### 项目介绍
@@ -93,13 +93,13 @@
 
 #### 项目图片
 <br/>
-<img src="/projects/OEM/denglu.jpg" width="100%">
-<img src="/projects/OEM/huashu1.png" width="100%">
-<img src="/projects/OEM/huashu2.jpg" width="100%">
-<img src="/projects/OEM/huashu3.jpg" width="100%">
-<img src="/projects/OEM/huashu4.jpg" width="100%">
-<img src="/projects/OEM/huashu5.jpg" width="100%">
-<img src="/projects/OEM/huashu6.jpg" width="100%">
+<img :src="$withBase('/projects/OEM/denglu.jpg')" width="100%">
+<img :src="$withBase('/projects/OEM/huashu1.png')" width="100%">
+<img :src="$withBase('/projects/OEM/huashu2.jpg')" width="100%">
+<img :src="$withBase('/projects/OEM/huashu3.jpg')" width="100%">
+<img :src="$withBase('/projects/OEM/huashu4.jpg')" width="100%">
+<img :src="$withBase('/projects/OEM/huashu5.jpg')" width="100%">
+<img :src="$withBase('/projects/OEM/huashu6.jpg')" width="100%">
 
 ### 纳管中屏项目
 #### 项目介绍
@@ -109,14 +109,14 @@
 
 #### 项目图片
 <br/>
-<img src="/projects/zhongping/denglu.jpg" width="100%">
-<img src="/projects/zhongping/kehudongcha.png" width="100%">
-<img src="/projects/zhongping/celuexiazuan.jpg" width="100%">
-<img src="/projects/zhongping/quanxianguanli.jpg" width="100%">
-<img src="/projects/zhongping/xietongshengchan.jpg" width="100%">
-<img src="/projects/zhongping/xietongzonglan.jpg" width="100%">
-<img src="/projects/zhongping/yunyingshijiao.jpg" width="100%">
-<img src="/projects/zhongping/zhanghaoguanli.jpg" width="100%">
+<img :src="$withBase('/projects/zhongping/denglu.jpg')" width="100%">
+<img :src="$withBase('/projects/zhongping/kehudongcha.png')" width="100%">
+<img :src="$withBase('/projects/zhongping/celuexiazuan.jpg')" width="100%">
+<img :src="$withBase('/projects/zhongping/quanxianguanli.jpg')" width="100%">
+<img :src="$withBase('/projects/zhongping/xietongshengchan.jpg')" width="100%">
+<img :src="$withBase('/projects/zhongping/xietongzonglan.jpg')" width="100%">
+<img :src="$withBase('/projects/zhongping/yunyingshijiao.jpg')" width="100%">
+<img :src="$withBase('/projects/zhongping/zhanghaoguanli.jpg')" width="100%">
 
 ### 综合演示系统
 #### 项目介绍
@@ -125,9 +125,9 @@
 
 #### 项目图片
 <br/>
-<img src="/projects/zongheyanshi/yanshi1.jpg" width="100%">
-<img src="/projects/zongheyanshi/yanshi2.jpg" width="100%">
-<img src="/projects/zongheyanshi/yanshi3.jpg" width="100%">
+<img :src="$withBase('/projects/zongheyanshi/yanshi1.jpg')" width="100%">
+<img :src="$withBase('/projects/zongheyanshi/yanshi2.jpg')" width="100%">
+<img :src="$withBase('/projects/zongheyanshi/yanshi3.jpg')" width="100%">
 
 
 ## 宣怀教育科技有限公司

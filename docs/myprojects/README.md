@@ -7,16 +7,16 @@
 目前由于服务器到期，已经停止维护。仅作为项目记录留念。
 ### 图片介绍
 
-<img src="/projects/miniProgram/home1.jpg" width="49%" />
-<img src="/projects/miniProgram/home2.jpg" width="49%" />
-<img src="/projects/miniProgram/home3.jpg" width="49%" />
-<img src="/projects/miniProgram/anime1.jpg" width="49%" />
-<img src="/projects/miniProgram/movie1.jpg" width="49%" />
-<img src="/projects/miniProgram/tv1.jpg" width="49%" />
-<img src="/projects/miniProgram/novel1.jpg" width="49%" />
-<img src="/projects/miniProgram/novel2.jpg" width="49%" />
-<img src="/projects/miniProgram/detail1.jpg" width="49%" />
-<img src="/projects/miniProgram/myself.png" width="49%" />
+<img :src="$withBase('/projects/miniProgram/home1.jpg')" width="49%" />
+<img :src="$withBase('/projects/miniProgram/home2.jpg')" width="49%" />
+<img :src="$withBase('/projects/miniProgram/home3.jpg')" width="49%" />
+<img :src="$withBase('/projects/miniProgram/anime1.jpg')" width="49%" />
+<img :src="$withBase('/projects/miniProgram/movie1.jpg')" width="49%" />
+<img :src="$withBase('/projects/miniProgram/tv1.jpg')" width="49%" />
+<img :src="$withBase('/projects/miniProgram/novel1.jpg')" width="49%" />
+<img :src="$withBase('/projects/miniProgram/novel2.jpg')" width="49%" />
+<img :src="$withBase('/projects/miniProgram/detail1.jpg')" width="49%" />
+<img :src="$withBase('/projects/miniProgram/myself.png')" width="49%" />
 
 ### 内容
 #### 主要包含以下内容
@@ -45,12 +45,12 @@
 主要基于 Vue2.x 进行开发。纯属个人兴趣的开发。<br/>
 
 ### 图片介绍
-<img src="/projects/home/home1.jpg" width="100%" />
-<img src="/projects/home/home1.5.jpg" width="100%" />
-<img src="/projects/home/home2.jpg" width="100%" />
-<img src="/projects/home/discover.jpg" width="100%" />
-<img src="/projects/home/discover2.jpg" width="100%" />
-<img src="/projects/home/game.jpg" width="100%" />
+<img :src="$withBase('/projects/home/home1.jpg')" width="100%" />
+<img :src="$withBase('/projects/home/home1.5.jpg')" width="100%" />
+<img :src="$withBase('/projects/home/home2.jpg')" width="100%" />
+<img :src="$withBase('/projects/home/discover.jpg')" width="100%" />
+<img :src="$withBase('/projects/home/discover2.jpg')" width="100%" />
+<img :src="$withBase('/projects/home/game.jpg')" width="100%" />
 
 ## 聊天室
 ### 项目介绍
@@ -61,8 +61,8 @@
 * 进入聊天室提醒功能。
 
 ### 图片介绍
-<img src="/projects/chat/denglu.jpg" width="100%" />
-<img src="/projects/chat/chat1.jpg" width="100%" />
-<img src="/projects/chat/chat2.jpg" width="100%" />
+<img :src="$withBase('/projects/chat/denglu.jpg')" width="100%" />
+<img :src="$withBase('/projects/chat/chat1.jpg')" width="100%" />
+<img :src="$withBase('/projects/chat/chat2.jpg')" width="100%" />
 
 

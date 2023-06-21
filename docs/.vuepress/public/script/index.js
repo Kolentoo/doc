@@ -20,23 +20,34 @@ window.onload=function(){
 
 
     let item = document.querySelectorAll('.navbar .nav-item');
+    let sideItem = document.querySelectorAll('.sidebar .nav-links .nav-item');
     let work = item[2];
     let life = item[3];
+    let mwork = sideItem[2];
+    let mlife = sideItem[3];
     let mode = localStorage.getItem('mode');
     if(mode){
         if(mode=='kolento'){
             work.className='nav-item';
             life.className='nav-item';
+            mwork.className='nav-item';
+            mlife.className='nav-item';
         }else if(mode=='work'){
             work.className='nav-item';
             life.className='nav-item hide';
+            mwork.className='nav-item';
+            mlife.className='nav-item hide';
         }else{
             work.className='nav-item hide';
             life.className='nav-item hide';
+            mwork.className='nav-item hide';
+            mlife.className='nav-item hide';
         }
     }else{
         work.className='nav-item hide';
         life.className='nav-item hide';
+        mwork.className='nav-item hide';
+        mlife.className='nav-item hide';
     }
 
     btn.onclick=function(){
@@ -46,16 +57,22 @@ window.onload=function(){
                 console.log('管理员权限')
                 work.className='nav-item';
                 life.className='nav-item';
+                mwork.className='nav-item';
+                mlife.className='nav-item';
                 localStorage.setItem('mode','kolento');
             }else if(psd=='work'+currentDate){
                 console.log('工作权限')
                 work.className='nav-item';
                 life.className='nav-item hide';
+                mwork.className='nav-item';
+                mlife.className='nav-item hide';
                 localStorage.setItem('mode','work');
             }else{
                 console.log('游客权限');
                 work.className='nav-item hide';
                 life.className='nav-item hide';
+                mwork.className='nav-item hide';
+                mlife.className='nav-item hide';
                 localStorage.setItem('mode','normal');
             }
         }else{

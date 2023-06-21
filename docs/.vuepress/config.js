@@ -7,8 +7,8 @@ module.exports = {
     ['script',{src:'/script/index.js'}]
   ],
   dest: './dist', 
-  // base: '/kolento2023/', // 这是部署到github相关的配置 打包的时候用这个配置
-  base: '/', //开发环境
+  base: '/kolento2023/', // 这是部署到github相关的配置 打包的时候用这个配置
+  // base: '/', //开发环境
   markdown: {
     lineNumbers: true // 代码块显示行号
   },
@@ -20,7 +20,7 @@ module.exports = {
       { text: '首页', link: '/' },
       { text: '学习笔记', 
           items: [
-              { text: 'Vue3',  link: '/Vue3/' },
+              { text: 'Vue3',  link: '/vue3/' },
               { text: 'TypeScript', link: '/typescript/' },
               // { text: 'React', link: '/VuePress/' },
               // { text: '微信小程序', link: '/VuePress/' },
