@@ -1,4 +1,19 @@
 window.onload=function(){
+
+    // 延迟加载
+    showImg();
+    window.onscroll = function() {
+        showImg();
+    }
+
+    let menuList = document.getElementsByTagName('a');
+    console.log('menuList',menuList);
+    for (var i = 0; i === menuList.length; i++) {
+        menuList[i].addEventListener("click", function() {
+            console.log("fromage");
+        })
+    };
+
  
     // 创建一个权限按钮
     let home = document.querySelector('#app');
@@ -32,11 +47,13 @@ window.onload=function(){
             life.className='nav-item';
             mwork.className='nav-item';
             mlife.className='nav-item';
+            
         }else if(mode=='work'){
             work.className='nav-item';
             life.className='nav-item hide';
             mwork.className='nav-item';
             mlife.className='nav-item hide';
+            
         }else{
             work.className='nav-item hide';
             life.className='nav-item hide';
@@ -60,6 +77,7 @@ window.onload=function(){
                 mwork.className='nav-item';
                 mlife.className='nav-item';
                 localStorage.setItem('mode','kolento');
+                alert('已获得管理员权限')
             }else if(psd=='work'+currentDate){
                 console.log('工作权限')
                 work.className='nav-item';
@@ -67,6 +85,7 @@ window.onload=function(){
                 mwork.className='nav-item';
                 mlife.className='nav-item hide';
                 localStorage.setItem('mode','work');
+                alert('已获得中级权限')
             }else{
                 console.log('游客权限');
                 work.className='nav-item hide';
@@ -82,3 +101,38 @@ window.onload=function(){
     
 
 };
+
+
+function getPos(obj)
+{
+  var l=0;
+  var t=0;
+  while(obj)
+  {
+    l+=obj.offsetLeft;
+    t+=obj.offsetTop;
+    obj=obj.offsetParent;
+  }
+  return {left: l, top: t};
+}
+function showImg()
+{
+  var aTmg=document.getElementsByTagName('img');
+  console.log('aTmg',aTmg)
+  var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+  var scrollBottom=scrollTop+document.documentElement.clientHeight;
+  for(var i=0;i<aTmg.length;i++)
+  {
+    var p=getPos(aTmg[i]);
+    if(p.top<scrollBottom + 100)
+    {
+      //alert(aTmg);
+      if(aTmg[i].className=='logo'){
+        //logo 不用懒加载
+      }else{
+        aTmg[i].src=aTmg[i].getAttribute('_src');
+      }
+      
+    }
+  }
+}

@@ -17,21 +17,21 @@ up在b站发布的文章地址请点击这里<br />
 
 在各大评分网站都拥有极佳的口碑！**bangumi评分8.7、豆瓣评分9.0、MAL评分8.53、ANK评分7.75**，up看完这部电影感觉非常震撼，今天就和大家一起分享一下这部鬼才之作。
 
-<img :src="$withBase('/prefectblue/prefect-blue.png')" width="100%" />
+<img :_src="$withBase('/prefectblue/prefect-blue.png')" :src="$withBase('/loading.jpg')" width="100%" />
 
 ## 人物介绍
 #### 1.雾越未麻
 主人公，原偶像组合歌星，听从事务所的意见后转型为女演员。
-<img :src="$withBase('/prefectblue/1.jpg')" width="100%" />
+<img :_src="$withBase('/prefectblue/1.jpg')" :src="$withBase('/loading.jpg')" width="100%" />
 #### 2.留美
 未麻的经纪人，年轻的时候也曾是偶像
-<img :src="$withBase('/prefectblue/2.jpg')" width="100%" />
+<img :_src="$withBase('/prefectblue/2.jpg')" :src="$withBase('/loading.jpg')" width="100%" />
 #### 3.田所
 未麻所属事务所的社长。积极让未麻转型为女演员
-<img :src="$withBase('/prefectblue/3.jpg')" width="100%" />
+<img :_src="$withBase('/prefectblue/3.jpg')" :src="$withBase('/loading.jpg')" width="100%" />
 #### 4.内田守
 未麻的铁杆粉丝，还是个十足的跟踪狂
-<img :src="$withBase('/prefectblue/4.jpg')" width="100%" />
+<img :_src="$withBase('/prefectblue/4.jpg')" :src="$withBase('/loading.jpg')" width="100%" />
 
 ## 剧情解说
 ### 一、转型
@@ -198,7 +198,7 @@ BLUE 是忧郁的意思。指未麻在从偶像蜕变成演员期间的经历�
 以上也是大部分网上给出的解读，但实际上今敏并没有读过原著，而且作了大量的改编，在制作途中也觉得名字奇怪想过改名字，但是制作完成后因为这个名字很神秘所以就这么定了。
 
 up给大家找到了小说的封面，我们可以看到《PREFECT BLUE》下还写着 “完全变态”，这指的是昆虫的形态变化，寓意一种新生与蜕变，指的也就是未麻的转型与蜕变。 
-<img :src="$withBase('/prefectblue/novel.jpg')" width="100%" />
+<img :_src="$withBase('/prefectblue/novel.jpg')" :src="$withBase('/loading.jpg')" width="100%" />
 
 <font color="#666600">2.如何看待另一种解读：留美和私生饭是真实存在的 剧情都是真实的？</font>
 
