@@ -125,7 +125,7 @@ function showImg(){
     if(p.top<scrollBottom + 100)
     {
       //alert(aTmg);
-      if(aTmg[i].className=='logo'){
+      if(aTmg[i].className=='logo'||aTmg[i].alt=='hero'){
         //logo 不用懒加载
       }else{
         aTmg[i].src=aTmg[i].getAttribute('_src');
