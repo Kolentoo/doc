@@ -12,7 +12,7 @@ window.onload=function(){
             // 点击链接后执行延迟加载
             setTimeout(function(){
                 showImg();
-            }, 250);
+            }, 600);
         }
     })
 
