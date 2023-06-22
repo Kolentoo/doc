@@ -6,13 +6,16 @@ window.onload=function(){
         showImg();
     }
 
-    let menuList = document.getElementsByTagName('a');
-    console.log('menuList',menuList);
-    for (var i = 0; i === menuList.length; i++) {
-        menuList[i].addEventListener("click", function() {
-            console.log("fromage");
-        })
-    };
+    let menuList = document.querySelectorAll('a');
+    menuList.forEach(function(list,index){
+        menuList[index].onclick=function(){
+            // 点击链接后执行延迟加载
+            setTimeout(function(){
+                showImg();
+            }, 250);
+        }
+    })
+
 
  
     // 创建一个权限按钮
@@ -20,8 +23,6 @@ window.onload=function(){
     let btn = document.createElement("p");
     btn.className="mode";
     btn.innerHTML='访问<br/>权限'
-    console.log('home',home);
-    console.log("btn",btn)
     home.append(btn);
 
     //获取当前日期
@@ -102,9 +103,8 @@ window.onload=function(){
 
 };
 
-
-function getPos(obj)
-{
+// 图片延迟加载
+function getPos(obj){
   var l=0;
   var t=0;
   while(obj)
@@ -115,10 +115,8 @@ function getPos(obj)
   }
   return {left: l, top: t};
 }
-function showImg()
-{
+function showImg(){
   var aTmg=document.getElementsByTagName('img');
-  console.log('aTmg',aTmg)
   var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
   var scrollBottom=scrollTop+document.documentElement.clientHeight;
   for(var i=0;i<aTmg.length;i++)
