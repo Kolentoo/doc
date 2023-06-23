@@ -1,5 +1,7 @@
 window.onload=function(){
 
+
+
     // 延迟加载
     showImg();
     window.onscroll = function() {
@@ -12,7 +14,7 @@ window.onload=function(){
             // 点击链接后执行延迟加载
             setTimeout(function(){
                 showImg();
-            }, 600);
+            }, 300);
         }
     })
 
@@ -116,6 +118,7 @@ function getPos(obj){
   return {left: l, top: t};
 }
 function showImg(){
+    let cdn = 'https://cdn.jsdelivr.net/gh/kolentoo/kolento2023@kolento/'
   var aTmg=document.getElementsByTagName('img');
   var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
   var scrollBottom=scrollTop+document.documentElement.clientHeight;
@@ -128,7 +131,9 @@ function showImg(){
       if(aTmg[i].className=='logo'||aTmg[i].alt=='hero'){
         //logo 不用懒加载
       }else{
-        aTmg[i].src=aTmg[i].getAttribute('_src');
+        // console.log('aTmg[i]._src',aTmg[i].getAttribute('_src'))
+        // 替换为cdn连接
+        aTmg[i].src=cdn+aTmg[i].getAttribute('_src').split('/kolento2023')[1];
       }
       
     }

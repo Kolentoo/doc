@@ -1,3 +1,4 @@
+const path = require('path');
 module.exports = {
   title: 'K o l e n t o',
   description: '前端工程师',

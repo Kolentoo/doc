@@ -3,12 +3,12 @@
 **姓名：** K o l e n t o<br/>
 **职位：** 前端工程师<br/>
 **地区：** 上海<br/>
-**技术栈：** Vue2 / Vue3 / JavaScript / TypeScript / Node / 微信小程序<br/>
+**技术栈：** Vue2 / Vue3 / JavaScript / TypeScript / Jquery / Node / 微信小程序<br/>
 <div><img class="lazy" :_src="$withBase('/me/me2022.jpg')" :src="$withBase('/loading.jpg')" width="30%" /></div>
 
 ## 个人优势
 1.有**9年的web以前端开发经验**，包括移动端和PC端；<br/>
-2.精通 **html5/css3/javascript/jquery/Ajax/typescript/Vue2/Vue3/Vuex/vux/axios/es6/element ui/ant design/websocket/微信小程序/sass** 等前端开发技术。熟悉 **React/linux/mysql** 等技术。了解w3c标准，精通 **PS,webpack，git，svn** 等前端工具。<br/>
+2.精通 **jquery/typescript/Vue2/Vue3/Vuex/es6/element ui/ant design/微信小程序/sass** 等前端开发技术。熟悉 **React/linux/mysql** 等技术。了解w3c标准，精通 **PS,webpack，git，svn** 等前端工具。<br/>
 3.精通针对各种浏览器兼容性以及移动端安卓苹果系统的调试和修复；<br/>
 4.有丰富的项目经验，开发过大型CRM管理系统，复杂的电商网站；<br/>
 5.负责公司的前端技术选型，解决项目中的前端疑难问题；<br/>
