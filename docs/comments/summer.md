@@ -1,7 +1,7 @@
 # 夏日重现
 
 ## 前言
-<img :_src="$withBase('/summer/summer.png')" :src="$withBase('/loading.jpg')" width="100%" />
+<img _src="https://pcsdata.baidu.com/thumbnail/6203d954bk625a425b4fccbe105ad462?fid=1103391745831-16051585-419231825360452&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-V7dzZTET1grjyRw1nq5a%2BTny4l4%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686570549302911516&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%" />
 本来呢 up 是想做成视频的，奈何实在没啥空，并且现在着手在做其他视频，文案写好放了好几个月了，干脆直接投稿专栏了，内容比较长，分 1-10 周目，希望对大家有帮助。
 
 发布在b站的地址请点击这里。<br/>

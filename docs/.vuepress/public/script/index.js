@@ -125,7 +125,7 @@ function showImg(){
   for(var i=0;i<aTmg.length;i++)
   {
     var p=getPos(aTmg[i]);
-    if(p.top<scrollBottom + 100)
+    if(p.top<scrollBottom + 200)
     {
       //alert(aTmg);
       if(aTmg[i].className=='logo'||aTmg[i].alt=='hero'){

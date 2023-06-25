@@ -17,21 +17,21 @@ up在b站发布的文章地址请点击这里<br />
 
 在各大评分网站都拥有极佳的口碑！**bangumi评分8.7、豆瓣评分9.0、MAL评分8.53、ANK评分7.75**，up看完这部电影感觉非常震撼，今天就和大家一起分享一下这部鬼才之作。
 
-<img :_src="$withBase('/prefectblue/prefect-blue.png')" :src="$withBase('/loading.jpg')" width="100%" />
+<img _src="https://pcsdata.baidu.com/thumbnail/b8c9bc2eeqbfa1aa99f6c339dce4bffe?fid=1103391745831-16051585-174197276519316&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-LftsCWReZdJZ7%2B6MkEpWuRsXR7Q%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686523337611722888&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%" />
 
 ## 人物介绍
 #### 1.雾越未麻
 主人公，原偶像组合歌星，听从事务所的意见后转型为女演员。
-<img :_src="$withBase('/prefectblue/1.jpg')" :src="$withBase('/loading.jpg')" width="100%" />
+<img _src="https://pcsdata.baidu.com/thumbnail/25f54d5d6tb63e1ff4d9ca799dc3310a?fid=1103391745831-16051585-879150833711614&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-zaTFKyOmPQJK0BFFWu%2FE27JcSI4%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686523337611722888&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%" />
 #### 2.留美
 未麻的经纪人，年轻的时候也曾是偶像
-<img :_src="$withBase('/prefectblue/2.jpg')" :src="$withBase('/loading.jpg')" width="100%" />
+<img _src="https://pcsdata.baidu.com/thumbnail/fe80bc816nd66f900ac89d78b5a18496?fid=1103391745831-16051585-360669826988080&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-ARnb95aRG5uT1FZElnJ5AtRhTGk%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686523337611722888&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%" />
 #### 3.田所
 未麻所属事务所的社长。积极让未麻转型为女演员
-<img :_src="$withBase('/prefectblue/3.jpg')" :src="$withBase('/loading.jpg')" width="100%" />
+<img _src="https://pcsdata.baidu.com/thumbnail/70360f545m3cb0cacc2ccb5bad423044?fid=1103391745831-16051585-438654145667818&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-V45hvm4xmjsRXCqyHV8KHFLfLf0%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686523337611722888&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%" />
 #### 4.内田守
 未麻的铁杆粉丝，还是个十足的跟踪狂
-<img :_src="$withBase('/prefectblue/4.jpg')" :src="$withBase('/loading.jpg')" width="100%" />
+<img _src="https://pcsdata.baidu.com/thumbnail/5e86da8bch533a83a62be0f086884c3b?fid=1103391745831-16051585-374445383884196&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-2bTAjs6C8KJtfudUqjAZfe%2Fn6Mg%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686523337611722888&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%" />
 
 ## 剧情解说
 ### 一、转型
@@ -198,7 +198,7 @@ BLUE 是忧郁的意思。指未麻在从偶像蜕变成演员期间的经历�
 以上也是大部分网上给出的解读，但实际上今敏并没有读过原著，而且作了大量的改编，在制作途中也觉得名字奇怪想过改名字，但是制作完成后因为这个名字很神秘所以就这么定了。
 
 up给大家找到了小说的封面，我们可以看到《PREFECT BLUE》下还写着 “完全变态”，这指的是昆虫的形态变化，寓意一种新生与蜕变，指的也就是未麻的转型与蜕变。 
-<img :_src="$withBase('/prefectblue/novel.jpg')" :src="$withBase('/loading.jpg')" width="100%" />
+<img _src="https://pcsdata.baidu.com/thumbnail/b6e1499c7r2652f87a852b3c52450b2a?fid=1103391745831-16051585-1014851324619830&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-lM8VpiRK4wBXntA6kda9%2BjnsN%2FU%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686523337611722888&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%" />
 
 <font color="#666600">2.如何看待另一种解读：留美和私生饭是真实存在的 剧情都是真实的？</font>
 
