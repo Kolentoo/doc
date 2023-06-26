@@ -35,6 +35,7 @@ module.exports = {
       { text: '文章记录', 
         items: [
             { text: 'JS常用API',  link: '/articleJS/' },
+            { text: '项目搭建笔记' , link:'/articleProjectNote/'}
         ]
       },
       { text: '个人简历', 
@@ -105,6 +106,9 @@ module.exports = {
         '',      /* /bar/ */
       ],
       '/articleJS/': [
+        '',      /* /bar/ */
+      ],
+      '/articleProjectNote/': [
         '',      /* /bar/ */
       ],
       
