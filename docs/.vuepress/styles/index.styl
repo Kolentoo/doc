@@ -49,6 +49,43 @@ blockquote {
 }
 img {
   transition:all ease 0.3s;
+  cursor:pointer;
+}
+
+// 弹窗相关
+.hide {
+  display:block;
+  z-index:-1;
+  opacity:0;
+}
+.pop {
+  position:fixed;
+  width:100vw;
+  height:100%;
+  top:0;
+  left:0;
+  z-index:9999;
+  opacity:1;
+  transition:all ease 0.3s;
+  overflow:hidden;
+}
+.pop img{width:100%;margin:0 auto;}
+.mask {
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  background:rgba(0,0,0,0.5);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.img-box {
+  width:80%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
     

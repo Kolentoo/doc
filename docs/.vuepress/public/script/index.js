@@ -18,7 +18,7 @@ window.onload=function(){
         }
     })
 
-
+    
  
     // 创建一个权限按钮
     let home = document.querySelector('#app');
@@ -102,7 +102,9 @@ window.onload=function(){
         }
     }
     
-
+    addPop();
+    watchImg();
+    closeMask();
 };
 
 // 图片延迟加载
@@ -118,7 +120,9 @@ function getPos(obj){
   return {left: l, top: t};
 }
 function showImg(){
-    let cdn = 'https://cdn.jsdelivr.net/gh/kolentoo/kolento2023@kolento/'
+  //用了cdn还是慢 暂时舍弃了
+  let cdn = 'https://cdn.jsdelivr.net/gh/kolentoo/kolento2023@kolento/'
+
   var aTmg=document.getElementsByTagName('img');
   var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
   var scrollBottom=scrollTop+document.documentElement.clientHeight;
@@ -128,7 +132,7 @@ function showImg(){
     if(p.top<scrollBottom + 200)
     {
       //alert(aTmg);
-      if(aTmg[i].className=='logo'||aTmg[i].alt=='hero'){
+      if(aTmg[i].className=='logo'||aTmg[i].alt=='hero'||aTmg[i].className=='img-list'){
         //logo 不用懒加载
       }else{
         // console.log('aTmg[i]._src',aTmg[i].getAttribute('_src'))
@@ -139,4 +143,53 @@ function showImg(){
       
     }
   }
+}
+
+// 图片放大效果
+function watchImg(){
+    var aTmg=document.querySelectorAll('img');
+    let imgList = document.querySelectorAll('.img-list')[0];
+    console.log('imgList',imgList)
+    aTmg.forEach(function(list,index){
+        aTmg[index].onclick=function(){
+            console.log('点击事件',aTmg[index].src)
+
+            let pop = document.querySelector(".pop");
+            pop.className='pop'
+
+            imgList.src=aTmg[index].src;
+        }
+    })
+
+}
+
+function closeMask(){
+    let mask = document.querySelector(".mask");
+    let pop = document.querySelector(".pop");
+    mask.onclick=function(){
+        pop.className="pop hide"
+    }
+}
+
+// 添加图片弹窗
+function addPop(){
+    console.log('addPop')
+    let body = document.querySelector('body');
+    let pop = document.createElement("div");
+    pop.className="pop hide";
+
+    let mask = document.createElement("div");
+    mask.className="mask";
+
+    let imgBox = document.createElement("div");
+    let imgList = document.createElement("img");
+    imgList.setAttribute('src','');
+    imgBox.className='img-box'
+    imgList.className="img-list";
+    
+    pop.append(mask);
+    mask.append(imgBox);
+    imgBox.append(imgList);
+    
+    body.append(pop);
 }
