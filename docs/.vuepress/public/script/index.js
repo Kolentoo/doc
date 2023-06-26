@@ -14,6 +14,7 @@ window.onload=function(){
             // 点击链接后执行延迟加载
             setTimeout(function(){
                 showImg();
+                watchImg();
             }, 300);
         }
     })
@@ -147,25 +148,25 @@ function showImg(){
 
 // 图片放大效果
 function watchImg(){
-    var aTmg=document.querySelectorAll('img');
-    let imgList = document.querySelectorAll('.img-list')[0];
-    console.log('imgList',imgList)
-    aTmg.forEach(function(list,index){
-        aTmg[index].onclick=function(){
-            console.log('点击事件',aTmg[index].src)
-
-            let pop = document.querySelector(".pop");
+    let aTmg=document.getElementsByTagName('img');
+    let imgList = document.getElementById('img-list');
+    let pop = document.getElementById("pop");
+    console.log('aTmg',aTmg)
+    let imgGroup = Array.prototype.slice.call( aTmg )
+    imgGroup.forEach(function(list,index){
+        imgGroup[index].onclick=function(){
+            console.log('点击事件',imgGroup[index].src)
             pop.className='pop'
 
-            imgList.src=aTmg[index].src;
+            imgList.src=imgGroup[index].src;
         }
     })
 
 }
 
 function closeMask(){
-    let mask = document.querySelector(".mask");
-    let pop = document.querySelector(".pop");
+    let mask = document.getElementById("mask");
+    let pop = document.getElementById("pop");
     mask.onclick=function(){
         pop.className="pop hide"
     }
@@ -177,15 +178,18 @@ function addPop(){
     let body = document.querySelector('body');
     let pop = document.createElement("div");
     pop.className="pop hide";
+    pop.id="pop";
 
     let mask = document.createElement("div");
     mask.className="mask";
+    mask.id="mask";
 
     let imgBox = document.createElement("div");
     let imgList = document.createElement("img");
     imgList.setAttribute('src','');
     imgBox.className='img-box'
     imgList.className="img-list";
+    imgList.id="img-list"
     
     pop.append(mask);
     mask.append(imgBox);
