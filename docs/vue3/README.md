@@ -1,4 +1,8 @@
 # VUE3
+## 官方地址
+[vue3官方文档](https://cn.vuejs.org/guide/introduction.html) <br />
+[vite官方文档](https://cn.vitejs.dev/) <br />
+[typeScript使用指南](https://cn.vuejs.org/guide/typescript/overview.html)
 ## 安装
 > **前提条件** <br />
 > 已安装 16.0 或更高版本的 Node.js<br />
@@ -14,4 +18,7 @@ npm run dev
 // 打包命令
 npm run build
 ```
-此命令会在 ./dist 文件夹中为你的应用创建一个生产环境的构建版本。
+此命令会在 **./dist** 文件夹中为你的应用创建一个生产环境的构建版本。
+
+#### 配置推荐
+* 推荐的配置是 `Visual Studio Code + Volar` 扩展。

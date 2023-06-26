@@ -40,10 +40,10 @@ window.onload=function(){
 
     let item = document.querySelectorAll('.navbar .nav-item');
     let sideItem = document.querySelectorAll('.sidebar .nav-links .nav-item');
-    let work = item[2];
-    let life = item[3];
-    let mwork = sideItem[2];
-    let mlife = sideItem[3];
+    let work = item[3];
+    let life = item[4];
+    let mwork = sideItem[3];
+    let mlife = sideItem[4];
     let mode = localStorage.getItem('mode');
     if(mode){
         if(mode=='kolento'){
