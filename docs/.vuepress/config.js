@@ -20,17 +20,23 @@ module.exports = {
     nav: [
       { text: '首页', link: '/' },
       { text: '学习笔记', 
-          items: [
-              { text: 'Vue3',  link: '/vue3/' },
-              { text: 'TypeScript', link: '/typescript/' },
-              // { text: 'React', link: '/VuePress/' },
-              // { text: '微信小程序', link: '/VuePress/' },
-              // { text: 'JavaScript', link: '/VuePress/' },
-              // { text: 'ES6', link: '/VuePress/' },
-              { text: 'VuePress', link: '/VuePress/' },
-              { text: 'MarkDown', link: '/markdown/' },
-              { text: 'Kplayer', link: '/kplayer/' }
-          ]},
+        items: [
+            { text: 'Vue3',  link: '/vue3/' },
+            { text: 'TypeScript', link: '/typescript/' },
+            // { text: 'React', link: '/VuePress/' },
+            // { text: '微信小程序', link: '/VuePress/' },
+            // { text: 'JavaScript', link: '/VuePress/' },
+            // { text: 'ES6', link: '/VuePress/' },
+            { text: 'VuePress', link: '/VuePress/' },
+            { text: 'MarkDown', link: '/markdown/' },
+            { text: 'Kplayer', link: '/kplayer/' }
+        ]
+      },
+      { text: '文章记录', 
+        items: [
+            { text: 'JS常用API',  link: '/articleJS/' },
+        ]
+      },
       { text: '个人简历', 
           items: [
           { text: '简历信息',  link: '/aboutme/' },
@@ -96,6 +102,9 @@ module.exports = {
         '',      /* /bar/ */
       ],
       '/important/': [
+        '',      /* /bar/ */
+      ],
+      '/articleJS/': [
         '',      /* /bar/ */
       ],
       
