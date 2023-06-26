@@ -21,7 +21,7 @@ tar zxvf kplayer-v0.5.6-linux_amd64.tar.gz
 cp config.json.example config.json
 ```
 5.修改刚才复制的json文件为如下内容
-```
+```json
 {
     "version": "2.0.0",
     "resource": {

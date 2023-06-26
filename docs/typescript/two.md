@@ -3,7 +3,7 @@
 作用：类型别名可以用来给类型取一个新的名字。<br/>
 常用于联合类型。
 #### 使用type关键字取别名
-```
+```ts
 type s = string; // 给类型起别名
 let str:s = '123';
 
@@ -21,7 +21,7 @@ let c:all=true;
 
 ## 字符串字面量类型
 用来约束取值只能是某几个字符串中的其中一个。
-```
+```ts
 // 张三 李四 王五 
 // 让这个names的值只能为这几个值的其中一个
 type stringType ="张三"|'李四'|'王五';
@@ -32,7 +32,7 @@ let names:stringType = '1';
 ## 元祖 Tuple
 ts中数组合并了相同类型的对象，而元祖可以合并不同类型的对象。可以在里面添加不同类型的对象。<br/>
 **注意：** 元祖声明里面的值时候，必须与[]中声明的类型顺序对应。
-```
+```ts
 // ts中数组合并相同类型的对象
 let arr1:number[]=[1,2,3,4,5]
 // 元祖Tuple合并不同类型的对象
@@ -51,7 +51,7 @@ arr2.push(false)
 2.添加可读性强的属性名。<br />
 
 **我们可以进行手动赋值，如果没有手动赋值 第一个值默认为0，后面的值递增+1**
-```
+```ts
 // 用枚举类型给一组数值赋予名称
 enum week {
     monday=1,
@@ -94,7 +94,7 @@ console.log('week',week[2]) //返回 tuesday
 以下为计算所得项，即通过计算所得出的项<br/>
 **注意：计算所得项后不能存放为手动赋值的枚举项** <br/>
 因为它会因为没有获得初始值而报错，因为前一项是计算所得项，值还在计算，无法根据前一个值来计算得到当前的值。
-```
+```ts
 enum a{
     red,
     blue='blue'.length,
@@ -108,7 +108,7 @@ enum a{
 **常数枚举与普通枚举的区别**<br />
 1.常数枚举会在编译阶段被删除<br />
 2.常数枚举不包含计算所得项<br />
-```
+```ts
 const enum obj{
     one,two,three
 }
@@ -120,7 +120,7 @@ console.log('obj', obj.one) // 0
 外部枚举是使用`declare enum`定义的枚举类型。<br/>
 `declare`定义的类型会在编译的时候检查，编译结果中会被删除，这一点和常数枚举一样。<br/>
 外部枚举常作用于 声明文件 中。
-```
+```ts
 declare enum Directions {
     Up,
     Down,
@@ -131,7 +131,7 @@ declare enum Directions {
 let directions = [Directions.Up, Directions.Down, Directions.Left, Directions.Right];
 ```
 **同时使用外部枚举和常数枚举**
-```
+```ts
 declare const enum Directions {
     Up,
     Down,
@@ -148,7 +148,7 @@ typescript除了实现所有ES6中类的功能以外，还添加了一些新的�
 类 是描述了所创建的对象共同的属性和方法<br/>
 类可以被理解为一个模板，然后通过这个模板去实例化对象。<br />
 ### ES6中类的用法
-```
+```ts
 // 声明一个类
 class Person{
     // 构造器/构造函数
@@ -163,7 +163,7 @@ new Person()
 ```
 ### 在typescript中的用法
 需要要在类中定义要需要使用的属性，才能在构造函数中赋值
-```
+```ts
 // 声明一个类
 class Person{
     name:string
@@ -180,7 +180,7 @@ new Person('kolento',20);
 ```
 ### 在类中定义方法
 需要对参数的类型作类型的约束
-```
+```ts
 // 声明一个类
 class Person{
     name:string
@@ -207,7 +207,7 @@ p.hello('kolento'); //返回 hikolento
 1.类与类质检可以存在集成关系，通过`extends`关键字继承<br />
 2.子类可以调用父类的构造函数和方法，通过`super`关键字<br />
 3.子类可以重写父类的方法
-```
+```ts
 // 父类
 class Animal{
     name:string
@@ -254,7 +254,7 @@ hi,中华田园犬
 * 通过`get`来设置读取器读取数据，`get`为只读属性
 * 通过`set`来设置存储数据
 * 在没有`set`的情况下，无法修改值
-```
+```ts
 class Name{
     firstName:string
     lastName:string
@@ -280,7 +280,7 @@ n.fullName='测试'; // 测试
 
 ### 静态方法/属性
 通过关键字`static`将属性和方法设置成静态的属性/方法。<br />
-```
+```ts
 class Test{
     static sex:string
     static hello(){
@@ -302,7 +302,7 @@ Test.hello();
 `public` `private` 和 `protected`
 * **public 修饰符表示属性或者方法是公有的**
 * 可以在任何地方被访问到，默认所有属性和方法都是public
-```
+```ts
 // 以下两种是一样的
 class Kolento{
     name:string
@@ -327,7 +327,7 @@ class Amiee{
 
 * **private只能在类的内部被访问**<br />
 当把类中的name属性改成private类型后，通过k访问name就会报错。
-```
+```ts
 class Kolento{
     private name:string
     constructor(name:string){
@@ -343,7 +343,7 @@ const k = new Kolento('kkk');
 k.name;
 ```
 * 当通过子类去继承父类时，父类的私有属性可以被继承，但是不能被读取。<br />
-```
+```ts
 class Kolento{
     private name:string
     constructor(name:string){
@@ -366,7 +366,7 @@ console.log('Cindy',Cindy.name)
 
 ```
 * **`protected`修饰符可以让被继承的子类访问，但是不能被自身和子类之外的地方访问**
-```
+```ts
 class Kolento{
     protected name:string
     constructor(name:string){
@@ -401,7 +401,7 @@ Cindy.test()
 #### readonly只读属性
 1.`readonly`修饰符下的属性只能读取不能修改<br />
 2.只读属性，但是在构造函数中可以修改
-```
+```ts
 class X{
     //只读属性，但是在构造函数中可以修改
     readonly age:number
@@ -422,7 +422,7 @@ class X{
 2.抽象类的作用主要是服务与它的子类<br/>
 
 **错误的写法：**
-```
+```ts
 // 抽象类不能够被实例化
 abstract class Y{
     abstract name:String
@@ -450,7 +450,7 @@ class Z extends Y{
 2.抽象类的作用就是为子类服务，子类可以通过继承后具体实现抽象类中的属性和方法。<br/>
 
 **正确的写法：**<br/>
-```
+```ts
 // 抽象类不能够被实例化
 abstract class Y{
     abstract name:String
@@ -475,7 +475,7 @@ class Z extends Y{
 #### 类的类型
 1.类可以被作为类型声明使用。<br />
 2.类中的属性方法和被声明的类 的属性方法必须相同才能使用。
-```
+```ts
 class Car{
     name:string
     constructor(name:string){
@@ -501,7 +501,7 @@ const car :Food = new Car('bmw');
 ### 类和接口的应用
 **接口与类的结合**<br />
 通过接口的形式，对类的形状进行描述和约束。<br />
-```typescript
+```ts
 // 定义一个接口
 interface Sing{
     sing()
@@ -529,7 +529,7 @@ woman.sing();
 
 ### 一个类与多个接口
 * 当使用一个类与多个接口时候，通过逗号`，`进行分割。
-```typescript
+```ts
 // 定义一个接口
 interface Sing{
     sing()
@@ -580,7 +580,7 @@ cai.basketball();
 * 用一个新的接口，继承其他几个接口<br />
 * 类的格式使用新的接口进行规范设置即可
 
-```typescript
+```ts
 interface Sing{
     sing()
 }
@@ -607,7 +607,7 @@ class Caixukun implements Cool{
 ### 接口继承类
 在ts中，接口可以继承类。<br />
 因为在我们声明一个类的同时，其实也声明了一个类型。
-```typescript
+```ts
 // 这里我们既声明了一个类，又可以把类当做类型使用。
 class Car{
     name:string
@@ -619,7 +619,7 @@ class Car{
 const car :Car = new Car('bmw');
 ```
 **尝试通过接口继承类**
-```typescript
+```ts
 // 定义一个普通类
 class Person{
     name:string
@@ -653,7 +653,7 @@ let people:Man={
 ### 函数的合并
 参照函数重载 <br/>
 允许一个函数接受不同数量或者类型的参数时，做出不同的处理。 也就是同一个函数，通过不同类型的参数，返回不同的结果。<br/>
-```typescript
+```ts
 function add(x:string,y:string):string
 function add(x;number,y:number):number
 
@@ -672,7 +672,7 @@ console.log(add('前端','测试')) // 返回 前端测试
 ```
 ### 接口的合并
 当出现两个同名的接口时，会合并他们变成一个接口<br/>
-```typescript
+```ts
 interface Cat{
     name:'小猫咪',
     sex:'mail'
@@ -696,7 +696,7 @@ const cat:Cat={
 泛型是指在定义函数、接口或类的时候，不提前指定具体类型，而是在使用的时候再执行类型的一种特性。<br />
 ### 简单案例
 **使用场景:** 在类型不确定的时候使用。<br/>
-```typescript
+```ts
 // 定义一个函数 参数1的类型不确定，参数2的类型为数值
 // 返回一个数组
 // T表示可以输入任意类型，等到执行时根据参数类型再指定当前类型

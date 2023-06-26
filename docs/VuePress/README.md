@@ -32,7 +32,7 @@ echo '# Hello VuePress'
 ```
 5.配置`package.json`文件
 * 配置运行命令和打包命令
-```
+```json
 {
   "scripts": {
     "dev": "vuepress dev docs",
@@ -42,7 +42,7 @@ echo '# Hello VuePress'
 ```
 * 处理node17/18版本中 运行和打包的报错问题<br/>
 在命令前添加对应的配置
-```
+```json
 {
   "scripts": {
     "dev": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress dev docs",
@@ -103,7 +103,7 @@ VuePress 遵循 “约定优于配置” 的原则，推荐的目录结构如下
 2.然后在`.vuepress`文件夹下新建`config.js`<br />
 在这个配置文件中对网站的信息内容进行配置，内容包含 导航栏、侧边栏、图标、图片等功能。<br/>
 以下是一个简单的案例<br/>
-```
+```js
 module.exports = {
   title: 'K o l e n t o',
   description: '前端工程师',
