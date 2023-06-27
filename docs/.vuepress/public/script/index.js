@@ -122,7 +122,7 @@ function getPos(obj){
 }
 function showImg(){
   //用了cdn还是慢 暂时舍弃了
-  let cdn = 'https://cdn.jsdelivr.net/gh/kolentoo/kolento2023@kolento/'
+  let cdn = 'https://cdn.jsdelivr.net/gh/kolentoo/kolento2023@master/'
 
   var aTmg=document.getElementsByTagName('img');
   var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
