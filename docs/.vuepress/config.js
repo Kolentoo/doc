@@ -48,6 +48,7 @@ module.exports = {
         items: [
           { text: '生活点滴',  link: '/life/' },
           { text: '旅行记录',  link: '/travel/' },
+          { text: '吃喝玩乐',  link: '/play/' },
           { text: '大事件', link: '/important/' },
       ]},
       { text: '动漫游戏', 
@@ -100,6 +101,9 @@ module.exports = {
         '',      /* /bar/ */
       ],
       '/travel/': [
+        '',      /* /bar/ */
+      ],
+      '/play/': [
         '',      /* /bar/ */
       ],
       '/important/': [

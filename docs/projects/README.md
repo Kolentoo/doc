@@ -12,15 +12,16 @@
 
 #### 项目图片 
 <br/>
-<img _src="https://pcsdata.baidu.com/thumbnail/2d6660508s3551ac0d38fc7451b8cc51?fid=1103391745831-16051585-558538628669289&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-kYjwPizlimQw2gBR7UBWd5Bbtws%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8732831120981427997&dp-callid=0&time=1687852800&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/4439de265m3b81ac6dd6d22595ff2020?fid=1103391745831-16051585-780334021859691&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-2Rtr%2FDrJkMxuL6sU7Fl0p%2BaG0nQ%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686014085437618282&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/3549bae1arb8a9a84ab0181486f83a63?fid=1103391745831-16051585-253252855089816&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-TPQKAYg1LRpLBW09PQkac1Abbsc%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686014085437618282&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/25b3f3bc5ud7a1d46d74bdb92529bf25?fid=1103391745831-16051585-1001366185304817&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-kOUj7rEK5XhklGmzXzhEmsVJs8w%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686014085437618282&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/26dbf84f2pfdc74f3380b66c79e0bcce?fid=1103391745831-16051585-858188615545815&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-fxHMcRHMexBiCijwrT6CbnTPzXk%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686014085437618282&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/4439de265m3b81ac6dd6d22595ff2020?fid=1103391745831-16051585-780334021859691&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-2Rtr%2FDrJkMxuL6sU7Fl0p%2BaG0nQ%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686014085437618282&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/609db2f67m1a8e7d41dc311410c462e3?fid=1103391745831-16051585-750498590375049&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-ltr73Sk7J%2FCyYr%2B6qcnEsMn6RV0%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686014085437618282&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/8e68e6bb9p7d42658dec288d0ee4ee1b?fid=1103391745831-16051585-479996090390826&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-mvu24KhGQ%2BcxEQ%2BBrEKxxiRpT9Q%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686014085437618282&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/b7e6bf091maa6a59c76006795cb420f7?fid=1103391745831-16051585-553838278633287&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-c6oyZtjzY7QDIHozSjySYKPYUW0%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686014085437618282&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/tuozhuai/denglu.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/tuozhuai/chuangjianduihua1.png')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/tuozhuai/chuangjianduihua2.png')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/tuozhuai/chuangjianduihua3.png')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/tuozhuai/duihuabaobiao.png')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/tuozhuai/zidingyibaobiao.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/tuozhuai/chuangjianbaobiao1.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/tuozhuai/chuangjianbaobiao2.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/tuozhuai/chuangjianbaobiao3.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/tuozhuai/hangyeshuyu.png')" :src="$withBase('/loading.jpg')" width="100%">
 
 ### 话加后台管理系统4000端新版
 #### 项目介绍
@@ -32,14 +33,14 @@
 
 #### 项目图片
 <br/>
-<img _src="https://pcsdata.baidu.com/thumbnail/8239a4130q2eb80ac44f402345e660cd?fid=1103391745831-16051585-1101065043798314&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-YFjlpQII5W2pO%2FxKZGrzyzgTR%2B8%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8685968590317693450&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/5a74c14a0h4c050f79bbc5cc28f6efd7?fid=1103391745831-16051585-801490946754909&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-QhQhMtXjvutCkbQpdOcpKXxxu0A%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8685968590317693450&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/f8e0ab1fds897c033c172984c1a262cf?fid=1103391745831-16051585-919181430048393&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-%2Bhh05TDRxmyeBtAyx5m7MniXRjE%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8685968590317693450&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/2a97204a3v6ca00974afede398878bc4?fid=1103391745831-16051585-843737375798890&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-78wRyNLh0oe%2FJChQ%2FKutCwPQq3E%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8685968590317693450&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/0173794e8r75877ede6c54795f5518e0?fid=1103391745831-16051585-718127670288927&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-5hwcE%2BcI%2FZeZv3NNVagHIkGUSkI%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8685968590317693450&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/6e5dbdc5evd4d4616b7846e9dec6afca?fid=1103391745831-16051585-570046483307086&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-HFhG8fSXcjA8QEvwFwFa1mgtgf4%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8685968590317693450&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/889a82b54kc733583949421e2e9553e4?fid=1103391745831-16051585-398026168702073&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-wyTKhbxxKPEV20Sq7VdoiYQshLo%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8685968590317693450&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/707541966m3f64b2a63f9f42290980d1?fid=1103391745831-16051585-130962019607123&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-yuv6ztZjuP0sE0vjsG1q961iU3M%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8685968590317693450&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/4000/denglu.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/4000/dianhurenwu.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/4000/dianhurenwu2.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/4000/jiankong.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/4000/renlianshibie.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/4000/zhijian1.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/4000/zidongrenwu.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/4000/screen.png')" :src="$withBase('/loading.jpg')" width="100%">
 
 ### 话加后台管理系统3000端新版
 1. 项目基于 **Vue2和ElementUi** 进行开发。主要都是对项目、任务、订单、业务、报表等一些内容的配置、新建和编辑。配置的信息会在4000版本的系统中更新显示，两个系统是互通的。<br/>
@@ -47,11 +48,11 @@
 
 #### 项目图片
 <br/>
-<img _src="https://pcsdata.baidu.com/thumbnail/52e4a3381ra10a3d6192a3ffe91dde23?fid=1103391745831-16051585-684958396139161&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-VgQ%2BbIYLpQnWA4MEmh1zrKI5stg%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8685912705383739192&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/363e12b80s1dae443f1219fe1e3fbdf8?fid=1103391745831-16051585-166152020746921&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-SNqh36tPQbFRrgkwYIhYCWLnlYA%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8685912705383739192&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/d4f0eb2fbi7e94ddd3710c9bc2ba7c44?fid=1103391745831-16051585-957029776851328&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-FQODphL9v%2Bj4Y8t5MR6910DQgK8%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8685912705383739192&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/06917ee2ek9c5fa4d5563ebfe438611d?fid=1103391745831-16051585-419513296611861&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-qDD06OO%2BnP7u5AcXrt72j0FWyDM%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8685912705383739192&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/5e55e9b4amd1fea72e23e912d1bbcc4f?fid=1103391745831-16051585-2259846167333&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-Ij1RM6urfx%2FJUcu7s0Irj5ppZ2M%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8685912705383739192&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/3000/shouye.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/3000/chanpinshezhi.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/3000/kanban.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/3000/huashushezhi.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/3000/xiangmuguanli1.jpg')" :src="$withBase('/loading.jpg')" width="100%">
 
 ### 话加后台系统4000旧版
 1. 项目基于 **Vue2和ElementUi** 进行开发。<br/>
@@ -59,10 +60,10 @@
 
 #### 项目图片
 <br/>
-<img _src="https://pcsdata.baidu.com/thumbnail/3d4afa626ocd967e4afd6b14d520b8d6?fid=1103391745831-16051585-338158414015220&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-r3aSkpiBncS%2FdKJaArCbLYmX0e8%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686073069772736887&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/7a209171ds0fac7bf80d12bb7db7dea6?fid=1103391745831-16051585-358095862772955&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-zN6VBhQnmWTvWs3LvjLwx9aNASg%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686073069772736887&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/96dc5c53fl2679eb104a09b30476d7e1?fid=1103391745831-16051585-334725818953200&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-3WA5QlPH1EZeWTZ7A06Xx9y%2FXeM%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686073069772736887&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/21ca0f47fge14212f7019b0f8a15ba76?fid=1103391745831-16051585-806447166650949&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-uI0eDd3uDaCHM5lU7kopqJAO6dc%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686073069772736887&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/4000_2/denglu.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/4000_2/shouye.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/4000_2/tonghuajilu.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/4000_2/dingdanxinxi.jpg')" :src="$withBase('/loading.jpg')" width="100%">
 
 ### OEM机器人后台系统
 #### 项目介绍
@@ -77,13 +78,13 @@
 
 #### 项目图片
 <br/>
-<img _src="https://pcsdata.baidu.com/thumbnail/564482d4ah4bab7d6fd18111e3c986ed?fid=1103391745831-16051585-1058223302423575&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-Yqgz8O%2FXZ%2F8Z1u%2BBnrdVaRNmDsE%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686098001964127683&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/cee761746h9d3aef9bed02a424db445d?fid=1103391745831-16051585-1010741488355949&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-Tm0CWMhv2pz88iUy%2B0ntqxeevp4%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686098001964127683&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/f1deb8a95n325701ff8e60084c0fe99e?fid=1103391745831-16051585-805184433454731&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-a4YB0acUZIIvHZyH6griVGx4otU%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686098001964127683&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/2689fc65dm90839cc91a7d2973f5eb2c?fid=1103391745831-16051585-792701554367039&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-BcNLxgIeGiE01RIsAZUuKwc5Sm0%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686098001964127683&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/62e8e9bbfk7391201fdb6d8f52844211?fid=1103391745831-16051585-650570464711879&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-zlvtsOiM2%2BtJ9%2FeLgz2LsOTQKDE%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686098001964127683&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/cb93ddec6td8a9b764bc00f87b278888?fid=1103391745831-16051585-473731894167305&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-R6kwvvn4ND7KRVJtUvhS60Xqf8I%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686098001964127683&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/8353bdc64r0da67005dca6700036b3f3?fid=1103391745831-16051585-458045118152253&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-YP%2FdKyAqVO0aLcf%2Fuv7OpserMUw%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686098001964127683&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/OEM/denglu.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/OEM/gongzuotai.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/OEM/huashuguanli.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/OEM/huashushichang.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/OEM/hujiaojilu.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/OEM/kongzhitai1.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/OEM/kongzhitai2.jpg')" :src="$withBase('/loading.jpg')" width="100%">
 
 ### 话术数据大屏
 #### 项目介绍
@@ -92,13 +93,13 @@
 
 #### 项目图片
 <br/>
-<img _src="https://pcsdata.baidu.com/thumbnail/5713453a0t3beda2f51f7c25b70129dc?fid=1103391745831-16051585-1038280374246867&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-zpTZYePSG1eZ7i5UsGdPRHiKDHI%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686125902328651882&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/26dd1509bn3e2c8b80135295ab7c2746?fid=1103391745831-16051585-1104082672443723&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-tgHtM6yJlQAlMWgh89JmJIL5AXs%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686125902328651882&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/778f98edeo61e05ad73007b6e89eec16?fid=1103391745831-16051585-1082762049509520&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-ybED0%2FNDViXUXskFbXc566aayF0%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686125902328651882&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/ee49f7632j357a5c6ed192a30b9ad491?fid=1103391745831-16051585-1055944805308192&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-JRolscS3c7lK%2B1JZyakIHou8MqQ%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686125902328651882&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/04f4db3feu98bae84858ae105f8b8bc7?fid=1103391745831-16051585-882544147974443&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-jEW6gmXtKe%2BF7udjz2pB%2FU0fnho%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686125902328651882&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/f46ec664ei2c7f755a6596d27aee8e52?fid=1103391745831-16051585-427897115519104&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-ctS3krr6rfedSY4vkqqYJzxCuMs%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686125902328651882&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/c3668c508td013b6e5606f0bfe1d4cfe?fid=1103391745831-16051585-251551718147373&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-1pJfYtvAjjHvGcwDbHSznieb8FE%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686125902328651882&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/OEM/denglu.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/OEM/huashu1.png')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/OEM/huashu2.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/OEM/huashu3.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/OEM/huashu4.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/OEM/huashu5.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/OEM/huashu6.jpg')" :src="$withBase('/loading.jpg')" width="100%">
 
 ### 纳管中屏项目
 #### 项目介绍
@@ -108,14 +109,14 @@
 
 #### 项目图片
 <br/>
-<img _src="https://pcsdata.baidu.com/thumbnail/5b90655a8i871bc2f114a16229e9651a?fid=1103391745831-16051585-888208499087727&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-31vjMvH3D0BSLOMLepz6cC0yBpo%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686153794162151930&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/147103196s7657aa4303206d6610d0b6?fid=1103391745831-16051585-880026392053949&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-opI0ZSfKurnscYLPm9lr3Pi1GPs%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686153794162151930&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/40c73ba67t41e497586d1c9b91dc0df3?fid=1103391745831-16051585-644660222235062&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-NFDozBGaA61WBBvKb4EJEPtW6GQ%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686153794162151930&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/1eb64772dt3e136f2dde038ad6c0e271?fid=1103391745831-16051585-623225220042453&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-WZzPO2NUdfWGB30ipx6ynxbFfug%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686153794162151930&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/b8d4f6535se63158ca140d206ba691a1?fid=1103391745831-16051585-576929964176983&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-muGRqWzmWbhzsFV26G3Mp8m99bQ%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686153794162151930&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/9166702d7h9877ef068d46f93271908c?fid=1103391745831-16051585-344826259534090&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-oPKkU8GHBz1UsiQEa1ej0uRTIs4%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686153794162151930&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/b18135c84s3cdccf524d0d109409844e?fid=1103391745831-16051585-58846584168109&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-hA%2Fqr2gsgZLGt%2Ba9Kk01lblaYUI%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686153794162151930&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/f3f030808g663fc2a740cb37310ed7a1?fid=1103391745831-16051585-932232609159085&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-%2Bom3gbdun%2FrOMAahXB4f6YfpmbU%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686176411489037329&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/zhongping/denglu.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/zhongping/kehudongcha.png')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/zhongping/celuexiazuan.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/zhongping/quanxianguanli.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/zhongping/xietongshengchan.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/zhongping/xietongzonglan.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/zhongping/yunyingshijiao.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/zhongping/zhanghaoguanli.jpg')" :src="$withBase('/loading.jpg')" width="100%">
 
 ### 综合演示系统
 #### 项目介绍
@@ -124,9 +125,9 @@
 
 #### 项目图片
 <br/>
-<img _src="https://pcsdata.baidu.com/thumbnail/9b0afcc58mdfecf2da335e1971d39258?fid=1103391745831-16051585-27695363591863&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-uuDHjxyTPwcuj8eHYR5KIaZyd28%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686185553867890210&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/6d463b532s485969af02c207a6acb389?fid=1103391745831-16051585-261113410426970&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-8huiWnpvGMJE9I2CywXA3x6N6c8%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686185553867890210&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
-<img _src="https://pcsdata.baidu.com/thumbnail/2b652ebf4te83cb384bb11109397bceb?fid=1103391745831-16051585-360433278491869&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-qLGfFhYLCVn03qUceDGj0ql9VrI%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=8686185553867890210&dp-callid=0&time=1687680000&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/zongheyanshi/yanshi1.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/zongheyanshi/yanshi2.jpg')" :src="$withBase('/loading.jpg')" width="100%">
+<img :_src="$withBase('/projects/zongheyanshi/yanshi3.jpg')" :src="$withBase('/loading.jpg')" width="100%">
 
 
 ## 宣怀教育科技有限公司
