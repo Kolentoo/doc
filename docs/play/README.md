@@ -13,7 +13,6 @@
 <img :_src="$withBase('/travel/dishini/dishini09.jpg')" :src="$withBase('/loading.jpg')" width="32.5%" />
 
 ## 顾村公园
-堵车 赏花
 <img :_src="$withBase('/travel/gucungongyuan/gucun1.jpg')" :src="$withBase('/loading.jpg')" width="49%" />
 <img :_src="$withBase('/travel/gucungongyuan/gucun2.jpg')" :src="$withBase('/loading.jpg')" width="49%" />
 <img :_src="$withBase('/travel/gucungongyuan/gucun8.jpg')" :src="$withBase('/loading.jpg')" width="49%" />
