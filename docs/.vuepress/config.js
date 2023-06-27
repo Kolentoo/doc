@@ -23,7 +23,7 @@ module.exports = {
         items: [
             { text: 'Vue3',  link: '/vue3/' },
             { text: 'TypeScript', link: '/typescript/' },
-            // { text: 'React', link: '/VuePress/' },
+            { text: 'ES新特性', link: '/es/' },
             // { text: '微信小程序', link: '/VuePress/' },
             // { text: 'JavaScript', link: '/VuePress/' },
             // { text: 'ES6', link: '/VuePress/' },
@@ -113,6 +113,9 @@ module.exports = {
         '',      /* /bar/ */
       ],
       '/articleProjectNote/': [
+        '',      /* /bar/ */
+      ],
+      '/es/': [
         '',      /* /bar/ */
       ],
       
