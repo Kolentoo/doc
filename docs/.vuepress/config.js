@@ -5,6 +5,7 @@ module.exports = {
   // 注入到当前页面的 HTML <head> 中的标签
   head: [
     ['link', { rel: 'icon', href: '/kolento.png' }], // 增加一个自定义的 favicon(网页标签的图标)
+    // ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' }],
     ['script',{src:'/script/index.js'}]
   ],
   dest: './dist', 
