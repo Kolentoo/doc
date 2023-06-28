@@ -461,7 +461,487 @@ const myObject = reactive({
 ```
 
 ## 事件处理
+可以使用 `v-on` 指令 (简写为 @) 来监听 DOM 事件，并在事件触发时执行对应的 JavaScript。用法：`v-on:click="handler" 或 @click="handler"`。
+```vue
+<script setup>
+const name = ref('Vue.js')
 
+function greet(event) {
+  alert(`Hello ${name.value}!`)
+  // `event` 是 DOM 原生事件
+  if (event) {
+    alert(event.target.tagName)
+  }
+}
+</script>
+
+<template>
+<button @click="greet">Greet</button>
+</template>
+```
+
+### 事件参数
+有时我们需要在内联事件处理器中访问原生 DOM 事件。<br />
+你可以向该处理器方法传入一个特殊的 `$event` 变量，或者使用内联箭头函数。
+```html
+<template>
+<!-- 使用特殊的 $event 变量 -->
+<button @click="warn('Form cannot be submitted yet.', $event)">
+  Submit
+</button>
+
+<!-- 使用内联箭头函数 -->
+<button @click="(event) => warn('Form cannot be submitted yet.', event)">
+  Submit
+</button>
+</template>
+
+
+<script setup>
+function warn(message, event) {
+  // 这里可以访问原生事件
+  if (event) {
+    // event为 PointerEvent 对象
+    event.preventDefault()
+  }
+  alert(message)
+}
+<script>
+```
+
+### 事件修饰符
+事件修饰符可以帮助我们少写一些代码，更专注与数据逻辑，而不是dom上的一些操作。
+* .stop
+* .prevent
+* .self
+* .capture
+* .once
+* .passive
+修饰符的作用如下：
+```html
+<!-- 单击事件将停止传递 -->
+<a @click.stop="doThis"></a>
+
+<!-- 提交事件将不再重新加载页面 -->
+<form @submit.prevent="onSubmit"></form>
+
+<!-- 修饰语可以使用链式书写 -->
+<a @click.stop.prevent="doThat"></a>
+
+<!-- 也可以只有修饰符 -->
+<form @submit.prevent></form>
+
+<!-- 仅当 event.target 是元素本身时才会触发事件处理器 -->
+<!-- 例如：事件处理器不来自子元素 等于不让事件向下传递 -->
+<div @click.self="doThat">...</div>
+```
+> 使用修饰符时需要**注意调用顺序**，因为相关代码是以相同的顺序生成的。<br/>
+> 因此使用 @click.prevent.self 会阻止元素及其子元素的所有点击事件的默认行为，<br/>
+> 而 @click.self.prevent 则只会阻止对元素本身的点击事件的默认行为。
+
+### 按键修饰符
+* `.enter`修饰符只在按下键盘的 enter 按键后触发
+```html
+<!-- 仅在 `key` 为 `Enter` 时调用 `submit` -->
+<input @keyup.enter="submit" />
+```
+* `..page-down`修饰符只在按下键盘的 pageDown 按键后触发
+```html
+<input @keyup.page-down="onPageDown" />
+```
+#### 常用按键修饰符
+* .enter
+* .tab
+* .delete (捕获“Delete”和“Backspace”两个按键)
+* .esc
+* .space
+* .up
+* .down
+* .left
+* .right
+
+#### 系统按键修饰符
+* .ctrl
+* .alt
+* .shift
+* .meta 
+
+在 Mac 键盘上，meta 是 Command 键 (⌘)。在 Windows 键盘上，meta 键是 Windows 键 (⊞)
+
+#### 按键组合使用
+```html
+<!-- Alt + Enter -->
+<input @keyup.alt.enter="clear" />
+
+<!-- Ctrl + 点击 -->
+<div @click.ctrl="doSomething">Do something</div>
+```
+
+#### .exact 修饰符
+`.exact`修饰符会控制按键的组合范围
+```html
+<!-- 当按下 Ctrl 时，即使同时按下 Alt 或 Shift 也会触发 -->
+<button @click.ctrl="onClick">A</button>
+
+<!-- 仅当按下 Ctrl 且未按任何其他键时才会触发 -->
+<button @click.ctrl.exact="onCtrlClick">A</button>
+
+<!-- 仅当没有按下任何系统按键时触发 -->
+<button @click.exact="onClick">A</button>
+```
+
+### 鼠标按键修饰符
+* .left **鼠标左键**
+* .right **鼠标右键**
+* .middle  **鼠标滚轮按下**
+
+## 表单输入绑定
+### 基本语法
+使用`v-model`的指令进行表单值的双向绑定。<br/>
+它可以作用于`input` `select` `radio` `checkbox` `textarea`等表单上。
+```html
+<p>Message is: {{ message }}</p>
+<input v-model="message" placeholder="edit me" />
+<textarea v-model="message" placeholder="add multiple lines"></textarea>
+```
+
+### 修饰符
+#### .lazy
+默认情况下`input`会在每次`input`事件更新后更新数据,<br/>
+使用修饰符后，修改为 `change` 事件后更新数据。
+```html
+<input v-model.lazy="msg" />
+```
+
+#### .number
+让用户输入自动转换为数字，你可以在` v-model `后添加 `.number` 修饰符<br/>
+如果该值无法被 `parseFloat()` 处理，那么将返回原始值。
+```html
+<input v-model.number="age" />
+```
+
+#### .trim
+可以自动去除用户输入内容中两端的空格，你可以在 `v-model` 后添加 `.trim` 修饰符<br>
+在输入用户名等时候还是比较常用的。
+```html
+<input v-model.trim="msg" />
+```
+
+## 生命周期
+### 常用生命周期
+简单案例
+```js
+<script setup>
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  console.log(`the component is now mounted.`)
+})
+</script>
+```
+#### vue3和vue2生命周期函数对应
+| 执行时间 | Vue2.x的生命周期     | Vue3.x的生命周期    | 使用场景 |
+| -------- | -------- | -------- | -------- |
+| DOM挂在前 | beforeCreated | setup() | 接口调用执行/不操作DOM |
+| DOM挂在前 | created | setup() | 接口调用执行/不操作DOM |
+| 组件被挂载之前 | beforeMount | onBeforeMount | 更新 DOM 挂载之前的状态 |
+| 组件挂载完成后 | mounted | onMounted | 获取/操作/挂载DOM |
+| 组件即将因为响应式状态变更而更新其 DOM 树之前 | beforeUpdate | onBeforeUpdate | 用的不多 |
+| 组件因为响应式状态变更而更新其 DOM 树之后 | updated | onUpdate | 可以用来检测信息是否更新 |
+| 在组件实例被卸载之前 | beforeDestroy | onBeforeUnmount | 用的不多 |
+| 组件被挂载之前 | destroyed | onUnmounted | 清理一些副作用，例如计时器、DOM 事件监听器或者与服务器的连接 |
+| 捕获了后代组件传递的错误时 | errorCaptured | onErrorCaptured | 捕获子组件错误时使用 |
+
+
+#### onMounted()
+注册一个回调函数，**在组件挂载完成后**执行。<br/>
+当需要操作dom或者挂在dom的时候，方法可以在这个钩子中执行。
+
+#### onUpdated()
+注册一个回调函数，**在组件因为响应式状态变更而更新其 DOM 树之后**调用 <br/>
+**注意:** 不要在 updated 钩子中更改组件的状态，这可能会导致无限的更新循环！
+
+#### onUnmounted()
+注册一个回调函数，**在组件实例被卸载之后**调用。<br/>
+可以在这个钩子中手动清理一些副作用，例如计时器、DOM 事件监听器或者与服务器的连接。
+
+#### onBeforeMount()
+注册一个钩子，**在组件被挂载之前被调用**。<br/>
+此时，组件已经完成了其响应式状态的设置，但还没有创建 DOM 节点。它即将首次执行 DOM 渲染过程。
+
+#### onBeforeUpdate()
+**在组件即将因为响应式状态变更而更新其 DOM 树之前**调用。<br>
+这个钩子可以用来在 Vue 更新 DOM 之前访问 DOM 状态。
+
+#### onBeforeUnmount()
+**在组件实例被卸载之前**调用。<br/>
+当这个钩子被调用时，组件实例依然还保有全部的功能。
+
+### 不常用的钩子函数
+#### onErrorCaptured()
+在**捕获了后代组件传递的错误时**调用
+
+#### onRenderTracked()
+当组件渲染过程中**追踪到响应式依赖时**调用<br/>
+这个钩子仅在开发模式下可用，且在服务器端渲染期间不会被调用。
+
+#### onRenderTriggered() 
+当**响应式依赖的变更触发了组件渲染时**调用<br/>
+这个钩子仅在开发模式下可用，且在服务器端渲染期间不会被调用。
+
+#### onActivated()
+注册一个回调函数，若组件实例是 `<KeepAlive>` 缓存树的一部分，当组件被插入到 DOM 中时调用。
+
+#### onDeactivated()
+若组件实例是 `<KeepAlive>` 缓存树的一部分，当组件从 DOM 中被移除时调用。
+
+#### onServerPrefetch()
+注册一个异步函数，在组件实例在服务器上被渲染之前调用。<br/>
+这个钩子仅会在服务端渲染中执行，可以用于执行一些仅存在于服务端的数据抓取过程。
+
+## 侦听器
+在组合式 API 中，我们可以使用 `watch` 函数在每次响应式状态发生变化时触发回调函数。<br/>
+### 基本案例
+```html
+<script setup>
+import { ref, watch } from 'vue'
+
+const question = ref('')
+const answer = ref('Questions usually contain a question mark. ;-)')
+
+// 可以直接侦听一个 ref
+watch(question, async (newQuestion, oldQuestion) => {
+  if (newQuestion.indexOf('?') > -1) {
+    answer.value = 'Thinking...'
+    try {
+      const res = await fetch('https://yesno.wtf/api')
+      answer.value = (await res.json()).answer
+    } catch (error) {
+      answer.value = 'Error! Could not reach the API. ' + error
+    }
+  }
+})
+</script>
+
+<template>
+  <p>
+    Ask a yes/no question:
+    <input v-model="question" />
+  </p>
+  <p>{{ answer }}</p>
+</template>
+```
+
+#### 侦听数据类型
+`watch` 的第一个参数可以是不同形式的“数据源”：<br/>
+* 它可以是一个 ref (包括计算属性)、
+* 一个响应式对象、
+* 一个 getter 函数 
+* 多个数据源组成的数组
+```js
+const x = ref(0)
+const y = ref(0)
+
+// 单个 ref
+watch(x, (newX) => {
+  console.log(`x is ${newX}`)
+})
+
+// getter 函数
+watch(
+  () => x.value + y.value,
+  (sum) => {
+    console.log(`sum of x + y is: ${sum}`)
+  }
+)
+
+// 多个来源组成的数组
+watch([x, () => y.value], ([newX, newY]) => {
+  console.log(`x is ${newX} and y is ${newY}`)
+})
+```
+**注意：** 不能直接使用watch监听响应式对象的属性值。
+```js
+const obj = reactive({ count: 0 })
+
+// 错误，因为 watch() 得到的参数变成了 number
+watch(obj.count, (count) => {
+  console.log(`count is: ${count}`)
+})
+```
+
+### 深层侦听器
+如果直接给**watch**传入一个响应式对象，会创建一个深层的侦听器，这个对象的任意一处变更时，监听都会被触发。
+```js
+const obj = reactive({ count: 0 })
+
+watch(obj, (newValue, oldValue) => {
+  // 在嵌套的属性变更时触发
+  // 注意：`newValue` 此处和 `oldValue` 是相等的
+  // 因为它们是同一个对象！
+})
+
+obj.count++
+```
+也可以通过**deep**选项，强制转化成深层监听。
+```js
+watch(
+  // 这种参数的写法用于监听对象中具体属性的变化
+  () => state.someObject,
+  (newValue, oldValue) => {
+    // 注意：`newValue` 此处和 `oldValue` 是相等的
+    // *除非* state.someObject 被整个替换了
+  },
+  { deep: true }
+)
+```
+> 深层监听在作用于数据量较大的数据时候，性能开销较大，需谨慎使用。
+
+### 即时回调侦听器
+`watch` 默认是懒执行的：仅当数据源变化时，才会执行回调。但在某些场景中，我们希望在创建侦听器时，立即执行一遍回调。<br/>
+可以通过传入 `immediate: true `选项来强制侦听器的回调立即执行
+```js
+watch(source, (newValue, oldValue) => {
+  // 立即执行，且当 `source` 改变时再次执行
+}, { immediate: true })
+```
+
+### watchEffect()
+它会监听引用数据类型的所有属性，不需要具体到某个属性，一旦运行就会立即监听，组件卸载的时候会停止监听
+#### 基本使用
+```html
+<template>
+  <div>
+    <input type="text" v-model="obj.name"> 
+  </div>
+</template>
+
+<script>
+import { reactive, watchEffect } from 'vue';
+export default {
+  setup(){
+    let obj = reactive({
+      name:'zs'
+    });
+    watchEffect(() => {
+      console.log('name:',obj.name)
+    })
+
+    return {
+      obj
+    }
+  }
+}
+</script>
+
+```
+### watch vs watchEffect
+* **watch** 只追踪明确侦听的数据源，仅在数据源确实改变时才会触发回调。
+* **watchEffect** 自动追踪所有能访问到的响应式属性。这更方便。
+
+### 停止侦听器
+在setup中创建侦听器后，会自动绑定到组件实例上，并且会在组件卸载时自动停止。<br/>
+因此大多数情况下，不用担心如何去停止它。
+
+一个关键点是，侦听器**必须用同步语句创建**,如果用异步回调创建一个侦听器，<br/>
+那么它不会绑定到当前组件上，你必须手动停止它，以防内存泄漏。
+#### 异步创建侦听器
+```js
+<script setup>
+import { watchEffect } from 'vue'
+
+// 它会自动停止
+watchEffect(() => {})
+
+// ...这个则不会！
+setTimeout(() => {
+  watchEffect(() => {})
+}, 100)
+</script>
+```
+要手动停止一个侦听器，需要调用 `watch` 或 `watchEffect` 返回的函数
+```js
+const unwatch = watchEffect(() => {})
+
+// ...当该侦听器不再需要时
+unwatch()
+```
+
+## 模版引用
+### ref的基本使用
+使用`ref`进行底层dom元素的访问。<br/>
+**注意：** 只能在组件被挂在后才能使用ref进行访问。
+```html
+<script setup>
+import { ref, onMounted } from 'vue'
+
+// 声明一个 ref 来存放该元素的引用
+// 必须和模板里的 ref 同名
+const input = ref(null)
+
+onMounted(() => {
+  // 这里通过 input.value 访问到了input这个dom元素
+  input.value.focus()
+})
+</script>
+
+<template>
+  <input ref="input" />
+</template>
+```
+
+### 组件上的 ref
+模板引用也可以被用在一个子组件上。这种情况下引用中获得的值是组件实例<br/>
+```html
+<script setup>
+import { ref, onMounted } from 'vue'
+import Child from './Child.vue'
+
+const child = ref(null)
+
+onMounted(() => {
+  // child.value 是 <Child /> 组件的实例
+})
+</script>
+
+<template>
+  <Child ref="child" />
+</template>
+```
+
+## 组件基础
+### 定义一个组件
+定义一个组件，其实就是创建一个vue文件。
+```html
+<script setup>
+import { ref } from 'vue'
+
+const count = ref(0)
+</script>
+
+<template>
+  <button @click="count++">You clicked me {{ count }} times.</button>
+</template>
+```
+
+### 使用组件
+要使用一个子组件，我们需要在父组件中导入它<br/>
+1. 首先在script中导入子组件 <br/>
+2. 在template中直接引入使用即可
+```html
+<script setup>
+import ButtonCounter from './ButtonCounter.vue'
+</script>
+
+<template>
+  <h1>Here is a child component!</h1>
+  <ButtonCounter />
+</template>
+```
+
+
+
+ 
 
 
 
