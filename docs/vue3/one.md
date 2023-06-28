@@ -939,6 +939,128 @@ import ButtonCounter from './ButtonCounter.vue'
 </template>
 ```
 
+### 父传子 传递props
+`defineProps` 是一个仅 `<script setup>` 中可用的编译宏命令，并不需要显式地导入。声明的 `props` 会自动暴露给模板。<br/>
+**父组件中**
+```html
+<script>
+  import {ref} from 'vue'
+  import dataBox from '@/components/customTable.vue'
+  let test = ref('test');
+</script>
+
+<template>
+<dataBox :title="test" /> 
+</template>
+```
+**子组件中**
+```html
+<script setup>
+defineProps(['title'])
+</script>
+
+<template>
+  <h4>{{ title }}</h4>
+</template>
+```
+如果不使用`setup`语法糖的情况下，必须用`props`选项的形式声明
+```js
+export default {
+  props: ['title'],
+  setup(props) {
+    console.log(props.title)
+  }
+}
+```
+
+### 子传父 $emit
+在`setup`语法糖中 我们可以通过 `defineEmits` 宏来声明需要抛出的事件
+**父组件中**
+```html
+<script>
+  import {ref} from 'vue'
+  import dataBox from '@/components/customTable.vue'
+  let test = ref(1);
+  let changeResult = () =>{
+    test.value++
+  }
+</script>
+
+<template>
+<dataBox :title="test" @changeData="changeResult" /> 
+</template>
+```
+**子组件中**
+```html
+<script setup>
+defineProps(['title']);
+const emit = defineEmits(['change']);
+let change = () =>{
+  emit('changeData');
+}
+</script>
+
+<template>
+  <h4 @click="change">{{ title }}</h4>
+</template>
+```
+如果不使用`setup`语法糖的情况下，必须用`props`选项的形式声明
+```js
+export default {
+  props: ['title'],
+  setup(props) {
+    console.log(props.title)
+  }
+}
+```
+如果你没有在使用 `<script setup>`，你可以通过 emits 选项定义组件会抛出的事件。<br/>
+可以从 `setup()` 函数的第二个参数，即 setup 上下文对象上访问到 emit 函数
+```js
+export default {
+  emits: ['changeData'],
+  setup(props, ctx) {
+    ctx.emit('enlarge-text')
+  }
+}
+```
+
+### 动态组件
+当需要几个组件来回切换的时候，比如tab选项，就可以使用动态组件。<br/>
+通过修改 `is`的值来不断的切换需要渲染的组件。
+```html
+<script setup>
+import Home from './Home.vue'
+import Posts from './Posts.vue'
+import Archive from './Archive.vue'
+import { ref } from 'vue'
+ 
+const currentTab = ref('Home')
+
+const tabs = {
+  Home,
+  Posts,
+  Archive
+}
+</script>
+
+<template>
+  <div class="demo">
+    <button
+       v-for="(_, tab) in tabs"
+       :key="tab"
+       :class="['tab-button', { active: currentTab === tab }]"
+       @click="currentTab = tab"
+     >
+      {{ tab }}
+    </button>
+	  <component :is="tabs[currentTab]" class="tab"></component>
+  </div>
+</template>
+```
+
+当使用 `<component :is="...">` 来在多个组件间作切换时，被切换掉的组件会被卸载。<br/>
+可以通过 `<KeepAlive>` 组件强制被切换掉的组件仍然保持“存活”的状态。
+
 
 
  
